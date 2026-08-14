@@ -29,4 +29,4 @@ const __mfImport = (src) =>
   await __mfHostInit.__tla;
   const { initHost } = __mfHostInit;
   await initHost();
-})().then(() => __mfImport("./index-BWJzOo9S.js"));
+})().then(() => __mfImport("./index-DJ4mFfST.js"));
