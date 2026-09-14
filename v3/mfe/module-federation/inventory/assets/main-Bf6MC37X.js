@@ -7550,12 +7550,12 @@ var secondaryVariantStyle = function secondaryVariantStyle(_ref2) {
   var color = isInButtonGroup ? 'text.secondary' : 'text.accent';
 
   // hover
-  var hoverBorderColor = 'border._primary.hovered';
+  var hoverBorderColor = 'border._primary.enabled';
   var hoverBackgroundColor = '_foreground.subtle.hovered';
   var hoverColor = 'text.accent';
 
   // active
-  var activeBorderColor = 'border._primary.active';
+  var activeBorderColor = 'border._primary.enabled';
   var activeBackgroundColor = '_foreground.subtle.active';
   var activeColor = 'text.accent';
 
