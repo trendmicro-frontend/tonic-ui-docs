@@ -1,5 +1,5 @@
-import { g as getDefaultExportFromCjs } from './_virtual_mf___mfe_internal__inventory__loadShare__react_mf_1_jsx_mf_2_runtime__loadShare__.js-DGw0ZAHT.js';
-import { _ as __mfDefaultExport$1 } from './__virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js_commonjs-proxy-DH0iHNw2.js';
+import { g as getDefaultExportFromCjs } from './_virtual_mf___mfe_internal__inventory__loadShare__react_mf_1_jsx_mf_2_runtime__loadShare__.js-DJVUU5ri.js';
+import { _ as __mfDefaultExport$1 } from './__virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js_commonjs-proxy-DZIQO5i2.js';
 
 function _mergeNamespaces(n, m) {
   for (var i = 0; i < m.length; i++) {

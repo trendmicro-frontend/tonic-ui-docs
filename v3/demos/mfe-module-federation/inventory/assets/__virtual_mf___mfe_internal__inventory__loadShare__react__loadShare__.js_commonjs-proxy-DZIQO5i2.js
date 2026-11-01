@@ -1,4 +1,4 @@
-import { _ as __mfPrebuildNamespace } from './_virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js-CMbQQlkX.js';
+import { _ as __mfPrebuildNamespace } from './_virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js-B1ypUsOn.js';
 
 const __mfPrebuildExports = __mfPrebuildNamespace;
     const __mf_0$1 = __mfPrebuildExports["Activity"];

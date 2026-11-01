@@ -1,4 +1,4 @@
-import './virtualExposes-dkqcEJae.js';
+import './virtualExposes-BYDBHXD2.js';
 import '../remoteEntry.js';
 import './preload-helper-aLkWP_H3.js';
 

@@ -1,7 +1,7 @@
-import { _ as __mf_1, a as __mf_2, b as getAugmentedNamespace, g as getDefaultExportFromCjs } from './_virtual_mf___mfe_internal__inventory__loadShare__react_mf_1_jsx_mf_2_runtime__loadShare__.js-DGw0ZAHT.js';
-import { R as React, a as __mf_33, b as __mf_13, c as __mf_16, d as __mf_25, e as __mf_14, f as __mf_3, g as __mf_37, h as __mf_34, i as __mf_28, j as __mf_38, k as __mfDefaultExport, l as __mf_19, m as __mf_24, n as __mf_36, o as __mf_5 } from './_virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js-CMbQQlkX.js';
-import { _ as __mfDefaultExport$2 } from './__virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js_commonjs-proxy-DH0iHNw2.js';
-import { a as __mfDefaultExport$1, b as __mf_1$1 } from './_virtual_mf___mfe_internal__inventory__loadShare__react_mf_2_dom__loadShare__.js-D9KS16vq.js';
+import { _ as __mf_1, a as __mf_2 } from './_virtual_mf___mfe_internal__inventory__loadShare__react_mf_1_jsx_mf_2_runtime__loadShare__.js-DJVUU5ri.js';
+import { R as React, a as __mf_33, b as __mf_13, c as __mf_16, d as __mf_25, e as __mf_14, f as __mf_3, g as __mf_37, h as __mf_34, i as __mf_28, j as __mf_38, k as __mfDefaultExport, l as __mf_19, m as __mf_24, n as __mf_36, o as __mf_5 } from './_virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js-B1ypUsOn.js';
+import { a as __mfDefaultExport$1, b as __mf_1$1 } from './_virtual_mf___mfe_internal__inventory__loadShare__react_mf_2_dom__loadShare__.js-Bf8aYbgB.js';
+import './__virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js_commonjs-proxy-DZIQO5i2.js';
 
 /*
 
@@ -738,7 +738,7 @@ function rulesheet (callback) {
 	}
 }
 
-var weakMemoize$1 = function weakMemoize(func) {
+var weakMemoize = function weakMemoize(func) {
   var cache = new WeakMap();
   return function (arg) {
     if (cache.has(arg)) {
@@ -1193,8 +1193,8 @@ var createCache = function createCache(options) {
   return cache;
 };
 
-function _extends$1() {
-  _extends$1 = Object.assign ? Object.assign.bind() : function (target) {
+function _extends() {
+  _extends = Object.assign ? Object.assign.bind() : function (target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = arguments[i];
       for (var key in source) {
@@ -1205,7 +1205,7 @@ function _extends$1() {
     }
     return target;
   };
-  return _extends$1.apply(this, arguments);
+  return _extends.apply(this, arguments);
 }
 
 var reactIs$1 = {exports: {}};
@@ -1667,11 +1667,11 @@ var getTheme = function getTheme(outerTheme, theme) {
     return mergedTheme;
   }
 
-  return _extends$1({}, outerTheme, theme);
+  return _extends({}, outerTheme, theme);
 };
 
-var createCacheWithTheme = /* #__PURE__ */weakMemoize$1(function (outerTheme) {
-  return weakMemoize$1(function (theme) {
+var createCacheWithTheme = /* #__PURE__ */weakMemoize(function (outerTheme) {
+  return weakMemoize(function (theme) {
     return getTheme(outerTheme, theme);
   });
 });
@@ -2028,14 +2028,14 @@ function _toPropertyKey$5(t) {
   var i = _toPrimitive$5(t, "string");
   return "symbol" == typeof i ? i : i + "";
 }
-function _typeof$5(o) {
+function _typeof$4(o) {
   "@babel/helpers - typeof";
 
-  return _typeof$5 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+  return _typeof$4 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
     return typeof o;
   } : function (o) {
     return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, _typeof$5(o);
+  }, _typeof$4(o);
 }
 function _unsupportedIterableToArray$4(r, a) {
   if (r) {
@@ -2204,14 +2204,14 @@ function _toPropertyKey$4(t) {
   var i = _toPrimitive$4(t, "string");
   return "symbol" == typeof i ? i : i + "";
 }
-function _typeof$4(o) {
+function _typeof$3(o) {
   "@babel/helpers - typeof";
 
-  return _typeof$4 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+  return _typeof$3 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
     return typeof o;
   } : function (o) {
     return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, _typeof$4(o);
+  }, _typeof$3(o);
 }
 function _unsupportedIterableToArray$3(r, a) {
   if (r) {
@@ -2227,7 +2227,7 @@ var isNullish = function isNullish(value) {
 
 // https://github.com/sindresorhus/is-plain-obj/blob/main/index.js
 var isPlainObject$1 = function isPlainObject(value) {
-  if (_typeof$4(value) !== 'object' || value === null) {
+  if (_typeof$3(value) !== 'object' || value === null) {
     return false;
   }
   var prototype = Object.getPrototypeOf(value);
@@ -2255,7 +2255,7 @@ var getOwnerDocument = function getOwnerDocument(node) {
   return isElement(node) ? (_node$ownerDocument = node.ownerDocument) !== null && _node$ownerDocument !== void 0 ? _node$ownerDocument : document : document;
 };
 var isElement = function isElement(el) {
-  return el !== null && el !== undefined && _typeof$4(el) === 'object' && 'nodeType' in el && el.nodeType === Node.ELEMENT_NODE;
+  return el !== null && el !== undefined && _typeof$3(el) === 'object' && 'nodeType' in el && el.nodeType === Node.ELEMENT_NODE;
 };
 var reflow = function reflow(node) {
   return node && (node === null || node === void 0 ? void 0 : node.scrollTop);
@@ -2342,20 +2342,20 @@ var ensureFiniteNumber = function ensureFiniteNumber(value) {
   return ensureFiniteNumber(defaultValue);
 };
 
-function _typeof$3(obj) {
+function _typeof$2(obj) {
   "@babel/helpers - typeof";
 
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof$3 = function (obj) {
+    _typeof$2 = function (obj) {
       return typeof obj;
     };
   } else {
-    _typeof$3 = function (obj) {
+    _typeof$2 = function (obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
 
-  return _typeof$3(obj);
+  return _typeof$2(obj);
 }
 
 /**
@@ -2363,7 +2363,7 @@ function _typeof$3(obj) {
  * @returns {boolean} True if the argument appears to be a plain object.
  */
 var isPlainObject = function isPlainObject(obj) {
-  if (_typeof$3(obj) !== 'object' || obj === null) {
+  if (_typeof$2(obj) !== 'object' || obj === null) {
     return false;
   }
 
@@ -2978,111 +2978,7 @@ function _inheritsLoose(subClass, superClass) {
   _setPrototypeOf(subClass, superClass);
 }
 
-var propTypes = {exports: {}};
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-var ReactPropTypesSecret_1;
-var hasRequiredReactPropTypesSecret;
-
-function requireReactPropTypesSecret () {
-	if (hasRequiredReactPropTypesSecret) return ReactPropTypesSecret_1;
-	hasRequiredReactPropTypesSecret = 1;
-
-	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-	ReactPropTypesSecret_1 = ReactPropTypesSecret;
-	return ReactPropTypesSecret_1;
-}
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-var factoryWithThrowingShims;
-var hasRequiredFactoryWithThrowingShims;
-
-function requireFactoryWithThrowingShims () {
-	if (hasRequiredFactoryWithThrowingShims) return factoryWithThrowingShims;
-	hasRequiredFactoryWithThrowingShims = 1;
-
-	var ReactPropTypesSecret = /*@__PURE__*/ requireReactPropTypesSecret();
-
-	function emptyFunction() {}
-	function emptyFunctionWithReset() {}
-	emptyFunctionWithReset.resetWarningCache = emptyFunction;
-
-	factoryWithThrowingShims = function() {
-	  function shim(props, propName, componentName, location, propFullName, secret) {
-	    if (secret === ReactPropTypesSecret) {
-	      // It is still safe when called from React.
-	      return;
-	    }
-	    var err = new Error(
-	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-	      'Use PropTypes.checkPropTypes() to call them. ' +
-	      'Read more at http://fb.me/use-check-prop-types'
-	    );
-	    err.name = 'Invariant Violation';
-	    throw err;
-	  }	  shim.isRequired = shim;
-	  function getShim() {
-	    return shim;
-	  }	  // Important!
-	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
-	  var ReactPropTypes = {
-	    array: shim,
-	    bigint: shim,
-	    bool: shim,
-	    func: shim,
-	    number: shim,
-	    object: shim,
-	    string: shim,
-	    symbol: shim,
-
-	    any: shim,
-	    arrayOf: getShim,
-	    element: shim,
-	    elementType: shim,
-	    instanceOf: getShim,
-	    node: shim,
-	    objectOf: getShim,
-	    oneOf: getShim,
-	    oneOfType: getShim,
-	    shape: getShim,
-	    exact: getShim,
-
-	    checkPropTypes: emptyFunctionWithReset,
-	    resetWarningCache: emptyFunction
-	  };
-
-	  ReactPropTypes.PropTypes = ReactPropTypes;
-
-	  return ReactPropTypes;
-	};
-	return factoryWithThrowingShims;
-}
-
-var hasRequiredPropTypes;
-
-function requirePropTypes () {
-	if (hasRequiredPropTypes) return propTypes.exports;
-	hasRequiredPropTypes = 1;
-	{
-	  propTypes.exports = /*@__PURE__*/ requireFactoryWithThrowingShims()();
-	}
-	return propTypes.exports;
-}
-
-const config$p = {
+const config$o = {
   disabled: false
 };
 
@@ -3201,7 +3097,7 @@ var Transition = /* @__PURE__ */ (function(_React$Component) {
     var _ref2 = this.props.nodeRef ? [appearing] : [__mfDefaultExport$1.findDOMNode(this), appearing], maybeNode = _ref2[0], maybeAppearing = _ref2[1];
     var timeouts = this.getTimeouts();
     var enterTimeout = appearing ? timeouts.appear : timeouts.enter;
-    if (!mounting && !enter || config$p.disabled) {
+    if (!mounting && !enter || config$o.disabled) {
       this.safeSetState({
         status: ENTERED
       }, function() {
@@ -3228,7 +3124,7 @@ var Transition = /* @__PURE__ */ (function(_React$Component) {
     var exit = this.props.exit;
     var timeouts = this.getTimeouts();
     var maybeNode = this.props.nodeRef ? void 0 : __mfDefaultExport$1.findDOMNode(this);
-    if (!exit || config$p.disabled) {
+    if (!exit || config$o.disabled) {
       this.safeSetState({
         status: EXITED
       }, function() {
@@ -3594,7 +3490,7 @@ var createStyled = function createStyled(tag, options) {
     });
 
     Styled.withComponent = function (nextTag, nextOptions) {
-      var newStyled = createStyled(nextTag, _extends$1({}, options, nextOptions, {
+      var newStyled = createStyled(nextTag, _extends({}, options, nextOptions, {
         shouldForwardProp: composeShouldForwardProps(Styled, nextOptions, true)
       }));
       return newStyled.apply(void 0, styles);
@@ -3765,14 +3661,14 @@ function _toPropertyKey$2(t) {
   var i = _toPrimitive$2(t, "string");
   return "symbol" == typeof i ? i : i + "";
 }
-function _typeof$2(o) {
+function _typeof$1(o) {
   "@babel/helpers - typeof";
 
-  return _typeof$2 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
+  return _typeof$1 = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
     return typeof o;
   } : function (o) {
     return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-  }, _typeof$2(o);
+  }, _typeof$1(o);
 }
 function _unsupportedIterableToArray(r, a) {
   if (r) {
@@ -3791,7 +3687,7 @@ var createSelectorFunction = function createSelectorFunction2(name) {
   }
   return function(props) {
     var result = {};
-    if (props && _typeof$2(props) === "object") {
+    if (props && _typeof$1(props) === "object") {
       result[name] = props;
     }
     return Object.entries(result);
@@ -3806,7 +3702,7 @@ var createFunctionalSelectorFunction = function createFunctionalSelectorFunction
   }
   return function(props) {
     var result = {};
-    if (props && _typeof$2(props) === "object") {
+    if (props && _typeof$1(props) === "object") {
       for (var _i = 0, _Object$entries = Object.entries(props); _i < _Object$entries.length; _i++) {
         var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2), key = _Object$entries$_i[0], value = _Object$entries$_i[1];
         result["".concat(name, "(").concat(key, ")")] = value;
@@ -3930,7 +3826,7 @@ var parser = function parser(config) {
       var sx = config[key];
       var raw = props[key];
       var scale = get(props.theme, sx.scale, sx.defaultScale);
-      if (_typeof$2(raw) === 'object') {
+      if (_typeof$1(raw) === 'object') {
         cache.breakpoints = !isCacheDisabled && cache.breakpoints || get(props.theme, 'breakpoints', defaultBreakpoints);
         if (Array.isArray(raw)) {
           cache.media = !isCacheDisabled && cache.media || [null].concat(_toConsumableArray(cache.breakpoints.map(createMediaQuery)));
@@ -4318,7 +4214,7 @@ var getter = function getter(scale, value, options) {
   //   value           — single-value token
   // Anything else (e.g. a plain nested object like { foo: 'bar' }) falls back to
   // the original path string to avoid silently returning undefined.
-  if (_typeof$2(result) === 'object') {
+  if (_typeof$1(result) === 'object') {
     var isNonCompatibleObject = ['_dark', '_light', 'main', 'value'].every(function (k) {
       return isNullish(result[k]);
     });
@@ -4357,11 +4253,11 @@ var getter = function getter(scale, value, options) {
       // Otherwise, replace the value with the CSS variable reference
       // For _dark/_light objects, we need to extract the actual value first
       var actualValue = result;
-      if (_typeof$2(result) === 'object' && (((_result = result) === null || _result === void 0 ? void 0 : _result._dark) !== undefined || ((_result2 = result) === null || _result2 === void 0 ? void 0 : _result2._light) !== undefined)) {
+      if (_typeof$1(result) === 'object' && (((_result = result) === null || _result === void 0 ? void 0 : _result._dark) !== undefined || ((_result2 = result) === null || _result2 === void 0 ? void 0 : _result2._light) !== undefined)) {
         var _result$_light;
         // In CSS Variables mode, we use the light value as reference for replacement
         actualValue = (_result$_light = result._light) !== null && _result$_light !== void 0 ? _result$_light : result._dark;
-      } else if (_typeof$2(result) === 'object') {
+      } else if (_typeof$1(result) === 'object') {
         var _result3;
         actualValue = (_result3 = result) === null || _result3 === void 0 ? void 0 : _result3.value;
       }
@@ -4428,7 +4324,7 @@ var getter = function getter(scale, value, options) {
   // Resolver: extract the scalar value from a compatible object.
   // By this point the gate-keeper above has already confirmed at least one
   // recognized property is present, so this block will always produce a value.
-  if (_typeof$2(result) === 'object') {
+  if (_typeof$1(result) === 'object') {
     var _result4, _result5;
     // Handle _dark/_light color mode tokens (for non-CSS Variables mode)
     if (((_result4 = result) === null || _result4 === void 0 ? void 0 : _result4._dark) !== undefined || ((_result5 = result) === null || _result5 === void 0 ? void 0 : _result5._light) !== undefined) {
@@ -4507,7 +4403,7 @@ var createStyleFunction = function createStyleFunction(_ref) {
       return {};
     }
     var result = properties.reduce(function (acc, property) {
-      if (_typeof$2(transformedValue) === 'object') {
+      if (_typeof$1(transformedValue) === 'object') {
         var _transformedValue$pro;
         // If the transformed value is an object, it may contain multiple style properties that need to be applied individually.
         // For example, `{ outline: 0 }` will be transformed into `{ outline: '2px solid transparent', outlineOffset: '2px' }`.
@@ -4525,7 +4421,7 @@ var createStyleFunction = function createStyleFunction(_ref) {
 var system$1$1 = system$2;
 
 var group$n = 'animation';
-var config$o = {
+var config$n = {
   animation: true,
   animationDelay: true,
   animationDirection: true,
@@ -4536,7 +4432,7 @@ var config$o = {
   animationPlayState: true,
   animationTimingFunction: true
 };
-var animation = system$1$1(config$o, {
+var animation = system$1$1(config$n, {
   group: group$n
 });
 var animation$1 = animation;
@@ -4656,7 +4552,7 @@ var positiveOrNegative = function positiveOrNegative(scale, value, options) {
 var positiveOrNegativeTransform = positiveOrNegative;
 
 var group$m = 'background';
-var config$n = {
+var config$m = {
   background: {
     property: 'background',
     scale: 'colors'
@@ -4697,37 +4593,37 @@ var config$n = {
     scale: 'sizes'
   }
 };
-config$n.bg = _objectSpread2$2(_objectSpread2$2({}, config$n.background), {}, {
+config$m.bg = _objectSpread2$2(_objectSpread2$2({}, config$m.background), {}, {
   alias: 'background'
 });
-config$n.bgAttachment = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundAttachment), {}, {
+config$m.bgAttachment = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundAttachment), {}, {
   alias: 'backgroundAttachment'
 });
-config$n.bgClip = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundClip), {}, {
+config$m.bgClip = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundClip), {}, {
   alias: 'backgroundClip'
 });
-config$n.bgColor = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundColor), {}, {
+config$m.bgColor = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundColor), {}, {
   alias: 'backgroundColor'
 });
-config$n.bgImage = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundImage), {}, {
+config$m.bgImage = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundImage), {}, {
   alias: 'backgroundImage'
 });
-config$n.bgPosition = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundPosition), {}, {
+config$m.bgPosition = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundPosition), {}, {
   alias: 'backgroundPosition'
 });
-config$n.bgPositionX = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundPositionX), {}, {
+config$m.bgPositionX = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundPositionX), {}, {
   alias: 'backgroundPositionX'
 });
-config$n.bgPositionY = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundPositionY), {}, {
+config$m.bgPositionY = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundPositionY), {}, {
   alias: 'backgroundPositionY'
 });
-config$n.bgRepeat = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundRepeat), {}, {
+config$m.bgRepeat = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundRepeat), {}, {
   alias: 'backgroundRepeat'
 });
-config$n.bgSize = _objectSpread2$2(_objectSpread2$2({}, config$n.backgroundSize), {}, {
+config$m.bgSize = _objectSpread2$2(_objectSpread2$2({}, config$m.backgroundSize), {}, {
   alias: 'backgroundSize'
 });
-var background$1 = system$1$1(config$n, {
+var background$1 = system$1$1(config$m, {
   group: group$m
 });
 var background$1$1 = background$1;
@@ -4980,7 +4876,7 @@ var _borderInline = {
   }
 };
 var group$l = 'border';
-var config$m = _objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2({}, _border), _borderTop), _borderRight), _borderBottom), _borderLeft), _borderRadius), _borderBlock), _borderImage), _borderInline), {}, {
+var config$l = _objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2$2({}, _border), _borderTop), _borderRight), _borderBottom), _borderLeft), _borderRadius), _borderBlock), _borderImage), _borderInline), {}, {
   borderCollapse: true,
   borderSpacing: {
     property: 'borderSpacing',
@@ -4995,26 +4891,26 @@ var config$m = _objectSpread2$2(_objectSpread2$2(_objectSpread2$2(_objectSpread2
     scale: 'borders'
   }
 });
-var border$1 = system$1$1(config$m, {
+var border$1 = system$1$1(config$l, {
   group: group$l
 });
 var border$1$1 = border$1;
 
 var group$k = 'color';
-var config$l = {
+var config$k = {
   color: {
     property: 'color',
     scale: 'colors'
   },
   colorScheme: true
 };
-var color = system$1$1(config$l, {
+var color = system$1$1(config$k, {
   group: group$k
 });
 var color$1 = color;
 
 var group$j = 'containment';
-var config$k = {
+var config$j = {
   contain: true,
   containIntrinsicSize: {
     property: 'containIntrinsicSize',
@@ -5022,13 +4918,13 @@ var config$k = {
   },
   contentVisibility: true
 };
-var containment = system$1$1(config$k, {
+var containment = system$1$1(config$j, {
   group: group$j
 });
 var containment$1 = containment;
 
 var group$i = 'effect';
-var config$j = {
+var config$i = {
   backdropFilter: true,
   backgroundBlendMode: true,
   boxShadow: {
@@ -5039,13 +4935,13 @@ var config$j = {
   mixBlendMode: true,
   opacity: true
 };
-var effect = system$1$1(config$j, {
+var effect = system$1$1(config$i, {
   group: group$i
 });
 var effect$1 = effect;
 
 var group$h = 'flexbox';
-var config$i = {
+var config$h = {
   alignItems: true,
   alignContent: true,
   justifyItems: true,
@@ -5063,13 +4959,13 @@ var config$i = {
   alignSelf: true,
   order: true
 };
-var flexbox = system$1$1(config$i, {
+var flexbox = system$1$1(config$h, {
   group: group$h
 });
 var flexbox$1 = flexbox;
 
 var group$g = 'gap';
-var config$h = {
+var config$g = {
   gap: {
     property: 'gap',
     scale: 'sizes'
@@ -5083,13 +4979,13 @@ var config$h = {
     scale: 'sizes'
   }
 };
-var gap = system$1$1(config$h, {
+var gap = system$1$1(config$g, {
   group: group$g
 });
 var gap$1 = gap;
 
 var group$f = 'grid';
-var config$g = {
+var config$f = {
   gridArea: true,
   gridAutoColumns: true,
   gridAutoFlow: true,
@@ -5121,23 +5017,23 @@ var config$g = {
     scale: 'sizes'
   }
 };
-var grid = system$1$1(config$g, {
+var grid = system$1$1(config$f, {
   group: group$f
 });
 var grid$1 = grid;
 
 var group$e = 'image';
-var config$f = {
+var config$e = {
   imageOrientation: true,
   imageRendering: true
 };
-var image = system$1$1(config$f, {
+var image = system$1$1(config$e, {
   group: group$e
 });
 var image$1 = image;
 
 var group$d = 'interactivity';
-var config$e = {
+var config$d = {
   appearance: true,
   caretColor: {
     property: 'caretColor',
@@ -5148,13 +5044,13 @@ var config$e = {
   resize: true,
   userSelect: true
 };
-var interactivity = system$1$1(config$e, {
+var interactivity = system$1$1(config$d, {
   group: group$d
 });
 var interactivity$1 = interactivity;
 
 var group$c = 'layout';
-var config$d = {
+var config$c = {
   width: {
     property: 'width',
     scale: 'sizes'
@@ -5191,30 +5087,30 @@ var config$d = {
   objectPosition: true,
   visibility: true
 };
-config$d.w = _objectSpread2$2(_objectSpread2$2({}, config$d.width), {}, {
+config$c.w = _objectSpread2$2(_objectSpread2$2({}, config$c.width), {}, {
   alias: 'width'
 });
-config$d.h = _objectSpread2$2(_objectSpread2$2({}, config$d.height), {}, {
+config$c.h = _objectSpread2$2(_objectSpread2$2({}, config$c.height), {}, {
   alias: 'height'
 });
-var layout = system$1$1(config$d, {
+var layout = system$1$1(config$c, {
   group: group$c
 });
 var layout$1 = layout;
 
 var group$b = 'list-style';
-var config$c = {
+var config$b = {
   listStyleImage: true,
   listStylePosition: true,
   listStyleType: true
 };
-var listStyle = system$1$1(config$c, {
+var listStyle = system$1$1(config$b, {
   group: group$b
 });
 var listStyle$1 = listStyle;
 
 var group$a = 'margin';
-var config$b = {
+var config$a = {
   margin: {
     property: 'margin',
     scale: 'space',
@@ -5271,38 +5167,38 @@ var config$b = {
     transform: positiveOrNegativeTransform
   }
 };
-config$b.marginX = {
+config$a.marginX = {
   properties: ['marginLeft', 'marginRight'],
   scale: 'space',
   transform: positiveOrNegativeTransform
 };
-config$b.marginY = {
+config$a.marginY = {
   properties: ['marginTop', 'marginBottom'],
   scale: 'space',
   transform: positiveOrNegativeTransform
 };
-config$b.m = _objectSpread2$2(_objectSpread2$2({}, config$b.margin), {}, {
+config$a.m = _objectSpread2$2(_objectSpread2$2({}, config$a.margin), {}, {
   alias: 'margin'
 });
-config$b.mt = _objectSpread2$2(_objectSpread2$2({}, config$b.marginTop), {}, {
+config$a.mt = _objectSpread2$2(_objectSpread2$2({}, config$a.marginTop), {}, {
   alias: 'marginTop'
 });
-config$b.mr = _objectSpread2$2(_objectSpread2$2({}, config$b.marginRight), {}, {
+config$a.mr = _objectSpread2$2(_objectSpread2$2({}, config$a.marginRight), {}, {
   alias: 'marginRight'
 });
-config$b.mb = _objectSpread2$2(_objectSpread2$2({}, config$b.marginBottom), {}, {
+config$a.mb = _objectSpread2$2(_objectSpread2$2({}, config$a.marginBottom), {}, {
   alias: 'marginBottom'
 });
-config$b.ml = _objectSpread2$2(_objectSpread2$2({}, config$b.marginLeft), {}, {
+config$a.ml = _objectSpread2$2(_objectSpread2$2({}, config$a.marginLeft), {}, {
   alias: 'marginLeft'
 });
-config$b.mx = _objectSpread2$2(_objectSpread2$2({}, config$b.marginX), {}, {
+config$a.mx = _objectSpread2$2(_objectSpread2$2({}, config$a.marginX), {}, {
   alias: 'marginX'
 });
-config$b.my = _objectSpread2$2(_objectSpread2$2({}, config$b.marginY), {}, {
+config$a.my = _objectSpread2$2(_objectSpread2$2({}, config$a.marginY), {}, {
   alias: 'marginY'
 });
-var margin = system$1$1(config$b, {
+var margin = system$1$1(config$a, {
   group: group$a
 });
 var margin$1 = margin;
@@ -5311,7 +5207,7 @@ var margin$1 = margin;
  * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Masking
  */
 var group$9 = 'masking';
-var config$a = {
+var config$9 = {
   clip: true,
   // deprecated: This feature is no longer recommended
   clipPath: true,
@@ -5335,13 +5231,13 @@ var config$a = {
   maskBorderSource: true,
   maskBorderWidth: true
 };
-var masking = system$1$1(config$a, {
+var masking = system$1$1(config$9, {
   group: group$9
 });
 var masking$1 = masking;
 
 var group$8 = 'outline';
-var config$9 = {
+var config$8 = {
   outline: {
     property: 'outline',
     scale: 'outlines'
@@ -5361,13 +5257,13 @@ var config$9 = {
   },
   outlineStyle: true
 };
-var outline = system$1$1(config$9, {
+var outline = system$1$1(config$8, {
   group: group$8
 });
 var outline$1 = outline;
 
 var group$7 = 'padding';
-var config$8 = {
+var config$7 = {
   padding: {
     property: 'padding',
     scale: 'space'
@@ -5389,42 +5285,42 @@ var config$8 = {
     scale: 'space'
   }
 };
-config$8.paddingX = {
+config$7.paddingX = {
   properties: ['paddingLeft', 'paddingRight'],
   scale: 'space'
 };
-config$8.paddingY = {
+config$7.paddingY = {
   properties: ['paddingTop', 'paddingBottom'],
   scale: 'space'
 };
-config$8.p = _objectSpread2$2(_objectSpread2$2({}, config$8.padding), {}, {
+config$7.p = _objectSpread2$2(_objectSpread2$2({}, config$7.padding), {}, {
   alias: 'padding'
 });
-config$8.pt = _objectSpread2$2(_objectSpread2$2({}, config$8.paddingTop), {}, {
+config$7.pt = _objectSpread2$2(_objectSpread2$2({}, config$7.paddingTop), {}, {
   alias: 'paddingTop'
 });
-config$8.pr = _objectSpread2$2(_objectSpread2$2({}, config$8.paddingRight), {}, {
+config$7.pr = _objectSpread2$2(_objectSpread2$2({}, config$7.paddingRight), {}, {
   alias: 'paddingRight'
 });
-config$8.pb = _objectSpread2$2(_objectSpread2$2({}, config$8.paddingBottom), {}, {
+config$7.pb = _objectSpread2$2(_objectSpread2$2({}, config$7.paddingBottom), {}, {
   alias: 'paddingBottom'
 });
-config$8.pl = _objectSpread2$2(_objectSpread2$2({}, config$8.paddingLeft), {}, {
+config$7.pl = _objectSpread2$2(_objectSpread2$2({}, config$7.paddingLeft), {}, {
   alias: 'paddingLeft'
 });
-config$8.px = _objectSpread2$2(_objectSpread2$2({}, config$8.paddingX), {}, {
+config$7.px = _objectSpread2$2(_objectSpread2$2({}, config$7.paddingX), {}, {
   alias: 'paddingX'
 });
-config$8.py = _objectSpread2$2(_objectSpread2$2({}, config$8.paddingY), {}, {
+config$7.py = _objectSpread2$2(_objectSpread2$2({}, config$7.paddingY), {}, {
   alias: 'paddingY'
 });
-var padding = system$1$1(config$8, {
+var padding = system$1$1(config$7, {
   group: group$7
 });
 var padding$1 = padding;
 
 var group$6 = 'position';
-var config$7 = {
+var config$6 = {
   inset: {
     property: 'inset',
     scale: 'space',
@@ -5486,13 +5382,13 @@ var config$7 = {
     scale: 'zIndices'
   }
 };
-var position = system$1$1(config$7, {
+var position = system$1$1(config$6, {
   group: group$6
 });
 var position$1 = position;
 
 var group$5 = 'scroll';
-var config$6 = {
+var config$5 = {
   scrollBehavior: true,
   scrollMargin: {
     property: 'scrollMargin',
@@ -5573,25 +5469,25 @@ var config$6 = {
   scrollSnapStop: true,
   scrollSnapType: true
 };
-config$6.scrollMarginX = {
+config$5.scrollMarginX = {
   properties: ['scrollMarginLeft', 'scrollMarginRight'],
   scale: 'space',
   transform: positiveOrNegativeTransform
 };
-config$6.scrollMarginY = {
+config$5.scrollMarginY = {
   properties: ['scrollMarginTop', 'scrollMarginBottom'],
   scale: 'space',
   transform: positiveOrNegativeTransform
 };
-config$6.scrollPaddingX = {
+config$5.scrollPaddingX = {
   properties: ['scrollPaddingLeft', 'scrollPaddingRight'],
   scale: 'space'
 };
-config$6.scrollPaddingY = {
+config$5.scrollPaddingY = {
   properties: ['scrollPaddingTop', 'scrollPaddingBottom'],
   scale: 'space'
 };
-var scroll = system$1$1(config$6, {
+var scroll = system$1$1(config$5, {
   group: group$5
 });
 var scroll$1 = scroll;
@@ -5600,7 +5496,7 @@ var scroll$1 = scroll;
  * https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Shapes
  */
 var group$4 = 'shape';
-var config$5 = {
+var config$4 = {
   shapeImageThreshold: true,
   shapeMargin: {
     property: 'shapeMargin',
@@ -5609,13 +5505,13 @@ var config$5 = {
   },
   shapeOutside: true
 };
-var shape = system$1$1(config$5, {
+var shape = system$1$1(config$4, {
   group: group$4
 });
 var shape$1 = shape;
 
 var group$3 = 'text';
-var config$4 = {
+var config$3 = {
   textCombineUpright: true,
   textDecoration: true,
   textDecorationColor: {
@@ -5640,13 +5536,13 @@ var config$4 = {
   },
   writingMode: true
 };
-var textDecoration = system$1$1(config$4, {
+var textDecoration = system$1$1(config$3, {
   group: group$3
 });
 var text$1 = textDecoration;
 
 var group$2 = 'transform';
-var config$3 = {
+var config$2 = {
   backfaceVisibility: true,
   perspective: true,
   perspectiveOrigin: true,
@@ -5655,13 +5551,13 @@ var config$3 = {
   transformOrigin: true,
   transformStyle: true
 };
-var transform = system$1$1(config$3, {
+var transform = system$1$1(config$2, {
   group: group$2
 });
 var transform$1 = transform;
 
 var group$1 = 'transition';
-var config$2 = {
+var config$1 = {
   transition: true,
   transitionDelay: true,
   transitionDuration: true,
@@ -5669,13 +5565,13 @@ var config$2 = {
   transitionTimingFunction: true,
   willChange: true
 };
-var transition = system$1$1(config$2, {
+var transition = system$1$1(config$1, {
   group: group$1
 });
 var transition$1 = transition;
 
 var group = 'typography';
-var config$1 = {
+var config = {
   fontFamily: {
     property: 'fontFamily',
     scale: 'fonts'
@@ -5709,7 +5605,7 @@ var config$1 = {
   wordBreak: true,
   wordSpacing: true
 };
-var typography = system$1$1(config$1, {
+var typography = system$1$1(config, {
   group: group
 });
 var typography$1 = typography;
@@ -8416,12 +8312,12 @@ var baseCSS = function baseCSS2(theme) {
 };
 var baseCSS$1 = baseCSS;
 
-var _ref = {
+var _ref$1 = {
   name: "1h74bwz",
   styles: 'html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}main{display:block;}h1{font-size:2em;margin:0.67em 0;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}img{border-style:none;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:0.35em 0.75em 0.625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details{display:block;}summary{display:list-item;}template{display:none;}[hidden]{display:none;}'
 } ;
 var normalizeCSS = function normalizeCSS2(theme) {
-  return _ref;
+  return _ref$1;
 };
 var normalizeCSS$1 = normalizeCSS;
 
@@ -8517,331 +8413,6 @@ var DefaultPropsProvider = function DefaultPropsProvider(_ref) {
 };
 var DefaultPropsProvider$1 = DefaultPropsProvider;
 
-var cjs = {};
-
-var interopRequireDefault = {exports: {}};
-
-(function (module) {
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : {
-	    "default": obj
-	  };
-	}
-	module.exports = _interopRequireDefault, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-} (interopRequireDefault));
-
-var interopRequireDefaultExports = interopRequireDefault.exports;
-
-var Combination = {};
-
-var _typeof$1 = {exports: {}};
-
-var hasRequired_typeof;
-
-function require_typeof () {
-	if (hasRequired_typeof) return _typeof$1.exports;
-	hasRequired_typeof = 1;
-	(function (module) {
-		function _typeof(o) {
-		  "@babel/helpers - typeof";
-
-		  return (module.exports = _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) {
-		    return typeof o;
-		  } : function (o) {
-		    return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o;
-		  }, module.exports.__esModule = true, module.exports["default"] = module.exports), _typeof(o);
-		}
-		module.exports = _typeof, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (_typeof$1));
-	return _typeof$1.exports;
-}
-
-var objectWithoutProperties = {exports: {}};
-
-var objectWithoutPropertiesLoose = {exports: {}};
-
-var hasRequiredObjectWithoutPropertiesLoose;
-
-function requireObjectWithoutPropertiesLoose () {
-	if (hasRequiredObjectWithoutPropertiesLoose) return objectWithoutPropertiesLoose.exports;
-	hasRequiredObjectWithoutPropertiesLoose = 1;
-	(function (module) {
-		function _objectWithoutPropertiesLoose(source, excluded) {
-		  if (source == null) return {};
-		  var target = {};
-		  var sourceKeys = Object.keys(source);
-		  var key, i;
-		  for (i = 0; i < sourceKeys.length; i++) {
-		    key = sourceKeys[i];
-		    if (excluded.indexOf(key) >= 0) continue;
-		    target[key] = source[key];
-		  }
-		  return target;
-		}
-		module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (objectWithoutPropertiesLoose));
-	return objectWithoutPropertiesLoose.exports;
-}
-
-var hasRequiredObjectWithoutProperties;
-
-function requireObjectWithoutProperties () {
-	if (hasRequiredObjectWithoutProperties) return objectWithoutProperties.exports;
-	hasRequiredObjectWithoutProperties = 1;
-	(function (module) {
-		var objectWithoutPropertiesLoose = requireObjectWithoutPropertiesLoose();
-		function _objectWithoutProperties(source, excluded) {
-		  if (source == null) return {};
-		  var target = objectWithoutPropertiesLoose(source, excluded);
-		  var key, i;
-		  if (Object.getOwnPropertySymbols) {
-		    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-		    for (i = 0; i < sourceSymbolKeys.length; i++) {
-		      key = sourceSymbolKeys[i];
-		      if (excluded.indexOf(key) >= 0) continue;
-		      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-		      target[key] = source[key];
-		    }
-		  }
-		  return target;
-		}
-		module.exports = _objectWithoutProperties, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (objectWithoutProperties));
-	return objectWithoutProperties.exports;
-}
-
-var _extends = {exports: {}};
-
-var hasRequired_extends;
-
-function require_extends () {
-	if (hasRequired_extends) return _extends.exports;
-	hasRequired_extends = 1;
-	(function (module) {
-		function _extends() {
-		  module.exports = _extends = Object.assign ? Object.assign.bind() : function (target) {
-		    for (var i = 1; i < arguments.length; i++) {
-		      var source = arguments[i];
-		      for (var key in source) {
-		        if (Object.prototype.hasOwnProperty.call(source, key)) {
-		          target[key] = source[key];
-		        }
-		      }
-		    }
-		    return target;
-		  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-		  return _extends.apply(this, arguments);
-		}
-		module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (_extends));
-	return _extends.exports;
-}
-
-var Lock = {};
-
-var defineProperty = {exports: {}};
-
-var toPropertyKey$1 = {exports: {}};
-
-var toPrimitive$1 = {exports: {}};
-
-var hasRequiredToPrimitive;
-
-function requireToPrimitive () {
-	if (hasRequiredToPrimitive) return toPrimitive$1.exports;
-	hasRequiredToPrimitive = 1;
-	(function (module) {
-		var _typeof = require_typeof()["default"];
-		function toPrimitive(t, r) {
-		  if ("object" != _typeof(t) || !t) return t;
-		  var e = t[Symbol.toPrimitive];
-		  if (void 0 !== e) {
-		    var i = e.call(t, r || "default");
-		    if ("object" != _typeof(i)) return i;
-		    throw new TypeError("@@toPrimitive must return a primitive value.");
-		  }
-		  return ("string" === r ? String : Number)(t);
-		}
-		module.exports = toPrimitive, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (toPrimitive$1));
-	return toPrimitive$1.exports;
-}
-
-var hasRequiredToPropertyKey;
-
-function requireToPropertyKey () {
-	if (hasRequiredToPropertyKey) return toPropertyKey$1.exports;
-	hasRequiredToPropertyKey = 1;
-	(function (module) {
-		var _typeof = require_typeof()["default"];
-		var toPrimitive = requireToPrimitive();
-		function toPropertyKey(t) {
-		  var i = toPrimitive(t, "string");
-		  return "symbol" == _typeof(i) ? i : i + "";
-		}
-		module.exports = toPropertyKey, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (toPropertyKey$1));
-	return toPropertyKey$1.exports;
-}
-
-var hasRequiredDefineProperty;
-
-function requireDefineProperty () {
-	if (hasRequiredDefineProperty) return defineProperty.exports;
-	hasRequiredDefineProperty = 1;
-	(function (module) {
-		var toPropertyKey = requireToPropertyKey();
-		function _defineProperty(obj, key, value) {
-		  key = toPropertyKey(key);
-		  if (key in obj) {
-		    Object.defineProperty(obj, key, {
-		      value: value,
-		      enumerable: true,
-		      configurable: true,
-		      writable: true
-		    });
-		  } else {
-		    obj[key] = value;
-		  }
-		  return obj;
-		}
-		module.exports = _defineProperty, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (defineProperty));
-	return defineProperty.exports;
-}
-
-var slicedToArray = {exports: {}};
-
-var arrayWithHoles = {exports: {}};
-
-var hasRequiredArrayWithHoles;
-
-function requireArrayWithHoles () {
-	if (hasRequiredArrayWithHoles) return arrayWithHoles.exports;
-	hasRequiredArrayWithHoles = 1;
-	(function (module) {
-		function _arrayWithHoles(arr) {
-		  if (Array.isArray(arr)) return arr;
-		}
-		module.exports = _arrayWithHoles, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (arrayWithHoles));
-	return arrayWithHoles.exports;
-}
-
-var iterableToArrayLimit = {exports: {}};
-
-var hasRequiredIterableToArrayLimit;
-
-function requireIterableToArrayLimit () {
-	if (hasRequiredIterableToArrayLimit) return iterableToArrayLimit.exports;
-	hasRequiredIterableToArrayLimit = 1;
-	(function (module) {
-		function _iterableToArrayLimit(r, l) {
-		  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
-		  if (null != t) {
-		    var e,
-		      n,
-		      i,
-		      u,
-		      a = [],
-		      f = true,
-		      o = false;
-		    try {
-		      if (i = (t = t.call(r)).next, 0 === l) {
-		        if (Object(t) !== t) return;
-		        f = !1;
-		      } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0);
-		    } catch (r) {
-		      o = true, n = r;
-		    } finally {
-		      try {
-		        if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return;
-		      } finally {
-		        if (o) throw n;
-		      }
-		    }
-		    return a;
-		  }
-		}
-		module.exports = _iterableToArrayLimit, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (iterableToArrayLimit));
-	return iterableToArrayLimit.exports;
-}
-
-var unsupportedIterableToArray = {exports: {}};
-
-var arrayLikeToArray = {exports: {}};
-
-var hasRequiredArrayLikeToArray;
-
-function requireArrayLikeToArray () {
-	if (hasRequiredArrayLikeToArray) return arrayLikeToArray.exports;
-	hasRequiredArrayLikeToArray = 1;
-	(function (module) {
-		function _arrayLikeToArray(arr, len) {
-		  if (len == null || len > arr.length) len = arr.length;
-		  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-		  return arr2;
-		}
-		module.exports = _arrayLikeToArray, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (arrayLikeToArray));
-	return arrayLikeToArray.exports;
-}
-
-var hasRequiredUnsupportedIterableToArray;
-
-function requireUnsupportedIterableToArray () {
-	if (hasRequiredUnsupportedIterableToArray) return unsupportedIterableToArray.exports;
-	hasRequiredUnsupportedIterableToArray = 1;
-	(function (module) {
-		var arrayLikeToArray = requireArrayLikeToArray();
-		function _unsupportedIterableToArray(o, minLen) {
-		  if (!o) return;
-		  if (typeof o === "string") return arrayLikeToArray(o, minLen);
-		  var n = Object.prototype.toString.call(o).slice(8, -1);
-		  if (n === "Object" && o.constructor) n = o.constructor.name;
-		  if (n === "Map" || n === "Set") return Array.from(o);
-		  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return arrayLikeToArray(o, minLen);
-		}
-		module.exports = _unsupportedIterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (unsupportedIterableToArray));
-	return unsupportedIterableToArray.exports;
-}
-
-var nonIterableRest = {exports: {}};
-
-var hasRequiredNonIterableRest;
-
-function requireNonIterableRest () {
-	if (hasRequiredNonIterableRest) return nonIterableRest.exports;
-	hasRequiredNonIterableRest = 1;
-	(function (module) {
-		function _nonIterableRest() {
-		  throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-		}
-		module.exports = _nonIterableRest, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (nonIterableRest));
-	return nonIterableRest.exports;
-}
-
-var hasRequiredSlicedToArray;
-
-function requireSlicedToArray () {
-	if (hasRequiredSlicedToArray) return slicedToArray.exports;
-	hasRequiredSlicedToArray = 1;
-	(function (module) {
-		var arrayWithHoles = requireArrayWithHoles();
-		var iterableToArrayLimit = requireIterableToArrayLimit();
-		var unsupportedIterableToArray = requireUnsupportedIterableToArray();
-		var nonIterableRest = requireNonIterableRest();
-		function _slicedToArray(arr, i) {
-		  return arrayWithHoles(arr) || iterableToArrayLimit(arr, i) || unsupportedIterableToArray(arr, i) || nonIterableRest();
-		}
-		module.exports = _slicedToArray, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (slicedToArray));
-	return slicedToArray.exports;
-}
-
 /**
  * defines a focus group
  */
@@ -8864,17 +8435,6 @@ var FOCUS_AUTO = 'data-autofocus-inside';
  * can be set on the element or container
  */
 var FOCUS_NO_AUTOFOCUS = 'data-no-autofocus';
-
-const allConstants = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  FOCUS_ALLOW,
-  FOCUS_AUTO,
-  FOCUS_DISABLED,
-  FOCUS_GROUP,
-  FOCUS_NO_AUTOFOCUS
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const require$$5$1 = /*@__PURE__*/getAugmentedNamespace(allConstants);
 
 /**
  * Assigns a value for a given ref, no matter of the ref format
@@ -8938,47 +8498,6 @@ function useCallbackRef(initialValue, callback) {
     return ref.facade;
 }
 
-/**
- * creates a Ref object with on change callback
- * @param callback
- * @returns {RefObject}
- *
- * @see {@link useCallbackRef}
- * @see https://reactjs.org/docs/refs-and-the-dom.html#creating-refs
- */
-function createCallbackRef(callback) {
-    var current = null;
-    return {
-        get current() {
-            return current;
-        },
-        set current(value) {
-            var last = current;
-            if (last !== value) {
-                current = value;
-                callback(value, last);
-            }
-        },
-    };
-}
-
-/**
- * Merges two or more refs together providing a single interface to set their value
- * @param {RefObject|Ref} refs
- * @returns {MutableRefObject} - a new ref, which translates all changes to {refs}
- *
- * @see {@link useMergeRefs} to be used in ReactComponents
- * @example
- * const Component = React.forwardRef((props, ref) => {
- *   const ownRef = useRef();
- *   const domRef = mergeRefs([ref, ownRef]); // 👈 merge together
- *   return <div ref={domRef}>...</div>
- * }
- */
-function mergeRefs(refs) {
-    return createCallbackRef(function (newValue) { return refs.forEach(function (ref) { return assignRef(ref, newValue); }); });
-}
-
 var useIsomorphicLayoutEffect = typeof window !== 'undefined' ? __mf_33 : __mf_28;
 var currentValues = new WeakMap();
 /**
@@ -8996,7 +8515,7 @@ var currentValues = new WeakMap();
  * }
  */
 function useMergeRefs(refs, defaultValue) {
-    var callbackRef = useCallbackRef(defaultValue || null, function (newValue) {
+    var callbackRef = useCallbackRef(null, function (newValue) {
         return refs.forEach(function (ref) { return assignRef(ref, newValue); });
     });
     // handle refs changes - added or removed
@@ -9022,165 +8541,15 @@ function useMergeRefs(refs, defaultValue) {
     return callbackRef;
 }
 
-/**
- * Create a _lense_ on Ref, making it possible to transform ref value
- * @param {ReactRef} ref
- * @param {Function} transformer. 👉 Ref would be __NOT updated__ on `transformer` update.
- * @returns {RefObject}
- *
- * @see https://github.com/theKashey/use-callback-ref#usetransformref-to-replace-reactuseimperativehandle
- * @example
- *
- * const ResizableWithRef = forwardRef((props, ref) =>
- *  <Resizable {...props} ref={useTransformRef(ref, i => i ? i.resizable : null)}/>
- * );
- */
-function useTransformRef(ref, transformer) {
-    return useCallbackRef(null, function (value) { return assignRef(ref, transformer(value)); });
-}
-
-/**
- * Transforms one ref to another
- * @example
- * ```tsx
- * const ResizableWithRef = forwardRef((props, ref) =>
- *   <Resizable {...props} ref={transformRef(ref, i => i ? i.resizable : null)}/>
- * );
- * ```
- */
-function transformRef(ref, transformer) {
-    return createCallbackRef(function (value) { return assignRef(ref, transformer(value)); });
-}
-
-/**
- * Unmemoized version of {@link useRefToCallback}
- * @see {@link useRefToCallback}
- * @param ref
- */
-function refToCallback(ref) {
-    return function (newValue) {
-        if (typeof ref === 'function') {
-            ref(newValue);
-        }
-        else if (ref) {
-            ref.current = newValue;
-        }
-    };
-}
-var nullCallback = function () { return null; };
-// lets maintain a weak ref to, well, ref :)
-// not using `kashe` to keep this package small
-var weakMem = new WeakMap();
-var weakMemoize = function (ref) {
-    var usedRef = ref || nullCallback;
-    var storedRef = weakMem.get(usedRef);
-    if (storedRef) {
-        return storedRef;
-    }
-    var cb = refToCallback(usedRef);
-    weakMem.set(usedRef, cb);
-    return cb;
+var hiddenGuard = {
+  width: "1px",
+  height: "0px",
+  padding: 0,
+  overflow: "hidden",
+  position: "fixed",
+  top: "1px",
+  left: "1px"
 };
-/**
- * Transforms a given `ref` into `callback`.
- *
- * To transform `callback` into ref use {@link useCallbackRef|useCallbackRef(undefined, callback)}
- *
- * @param {ReactRef} ref
- * @returns {Function}
- *
- * @see https://github.com/theKashey/use-callback-ref#reftocallback
- *
- * @example
- * const ref = useRef(0);
- * const setRef = useRefToCallback(ref);
- * 👉 setRef(10);
- * ✅ ref.current === 10
- */
-function useRefToCallback(ref) {
-    return weakMemoize(ref);
-}
-
-const es2015$2 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  assignRef,
-  createCallbackRef,
-  mergeRefs,
-  refToCallback,
-  transformRef,
-  useCallbackRef,
-  useMergeRefs,
-  useRefToCallback,
-  useTransformRef
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const require$$8 = /*@__PURE__*/getAugmentedNamespace(es2015$2);
-
-var FocusGuard = {};
-
-var hasRequiredFocusGuard;
-
-function requireFocusGuard () {
-	if (hasRequiredFocusGuard) return FocusGuard;
-	hasRequiredFocusGuard = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports.hiddenGuard = exports["default"] = void 0;
-		var React = _interopRequireWildcard(__mfDefaultExport$2);
-		_interopRequireDefault(/*@__PURE__*/ requirePropTypes());
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		var hiddenGuard = exports.hiddenGuard = {
-		  width: "1px",
-		  height: "0px",
-		  padding: 0,
-		  overflow: "hidden",
-		  position: "fixed",
-		  top: "1px",
-		  left: "1px"
-		};
-		var InFocusGuard = function InFocusGuard2(_ref) {
-		  var _ref$children = _ref.children, children = _ref$children === void 0 ? null : _ref$children;
-		  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
-		    key: "guard-first",
-		    "data-focus-guard": true,
-		    "data-focus-auto-guard": true,
-		    style: hiddenGuard
-		  }), children, children && /* @__PURE__ */ React.createElement("div", {
-		    key: "guard-last",
-		    "data-focus-guard": true,
-		    "data-focus-auto-guard": true,
-		    style: hiddenGuard
-		  }));
-		};
-		InFocusGuard.propTypes = {};
-		exports["default"] = InFocusGuard; 
-	} (FocusGuard));
-	return FocusGuard;
-}
-
-var medium = {};
 
 /******************************************************************************
 Copyright (c) Microsoft Corporation.
@@ -9210,78 +8579,9 @@ var __assign = function() {
   return __assign.apply(this, arguments);
 };
 
-function __rest(s, e) {
-  var t = {};
-  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-      t[p] = s[p];
-  if (s != null && typeof Object.getOwnPropertySymbols === "function")
-      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-          if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-              t[p[i]] = s[p[i]];
-      }
-  return t;
-}
-
 typeof SuppressedError === "function" ? SuppressedError : function (error, suppressed, message) {
   var e = new Error(message);
   return e.name = "SuppressedError", e.error = error, e.suppressed = suppressed, e;
-};
-
-var cache$1 = new WeakMap();
-var NO_OPTIONS = {};
-function useSidecar(importer, effect) {
-    (effect && effect.options) || NO_OPTIONS;
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    return useRealSidecar(importer, effect);
-}
-function useRealSidecar(importer, effect) {
-    var options = (effect && effect.options) || NO_OPTIONS;
-    var couldUseCache = !options.async;
-    var _a = __mf_38(couldUseCache ? function () { return cache$1.get(importer); } : undefined), Car = _a[0], setCar = _a[1];
-    var _b = __mf_38(null), error = _b[0], setError = _b[1];
-    __mf_28(function () {
-        if (!Car) {
-            importer().then(function (car) {
-                var resolved = effect ? effect.read() : car.default || car;
-                if (!resolved) {
-                    console.error('Sidecar error: with importer', importer);
-                    var error_1;
-                    if (effect) {
-                        console.error('Sidecar error: with medium', effect);
-                        error_1 = new Error('Sidecar medium was not found');
-                    }
-                    else {
-                        error_1 = new Error('Sidecar was not found in exports');
-                    }
-                    setError(function () { return error_1; });
-                    throw error_1;
-                }
-                cache$1.set(importer, resolved);
-                setCar(function () { return resolved; });
-            }, function (e) { return setError(function () { return e; }); });
-        }
-    }, []);
-    return [Car, error];
-}
-
-// eslint-disable-next-line @typescript-eslint/ban-types
-function sidecar(importer, errorComponent) {
-    var ErrorCase = function () { return errorComponent; };
-    return function Sidecar(props) {
-        var _a = useSidecar(importer, props.sideCar), Car = _a[0], error = _a[1];
-        if (error && errorComponent) {
-            return ErrorCase;
-        }
-        // @ts-expect-error type shenanigans
-        return Car ? __mf_14(Car, __assign({}, props)) : null;
-    };
-}
-
-var config = {
-    onError: function (e) { return console.error(e); },
-};
-var setConfig = function (conf) {
-    Object.assign(config, conf);
 };
 
 function ItoI(a) {
@@ -9362,367 +8662,143 @@ function createSidecarMedium(options) {
     return medium;
 }
 
-function renderCar(WrappedComponent, defaults) {
-    function State(_a) {
-        var stateRef = _a.stateRef, props = _a.props;
-        var renderTarget = __mf_24(function SideTarget() {
-            var args = [];
-            for (var _i = 0; _i < arguments.length; _i++) {
-                args[_i] = arguments[_i];
-            }
-            __mf_33(function () {
-                stateRef.current(args);
-            });
-            return null;
-        }, []);
-        // @ts-ignore
-        return __mf_14(WrappedComponent, __assign({}, props, { children: renderTarget }));
+var mediumFocus = createMedium({}, function (_ref) {
+  var target = _ref.target,
+    currentTarget = _ref.currentTarget;
+  return {
+    target: target,
+    currentTarget: currentTarget
+  };
+});
+var mediumBlur = createMedium();
+var mediumEffect = createMedium();
+var mediumSidecar = createSidecarMedium({
+  async: true,
+  ssr: typeof document !== 'undefined'
+});
+
+var focusScope = /*#__PURE__*/__mf_13(undefined);
+
+var emptyArray = [];
+var FocusLock = /* @__PURE__ */ __mf_16(function FocusLockUI(props, parentRef) {
+  var _extends2;
+  var _useState = __mf_38(), realObserved = _useState[0], setObserved = _useState[1];
+  var observed = __mf_37();
+  var isActive = __mf_37(false);
+  var originalFocusedElement = __mf_37(null);
+  var _useState2 = __mf_38({}), update = _useState2[1];
+  var children = props.children, _props$disabled = props.disabled, disabled = _props$disabled === void 0 ? false : _props$disabled, _props$noFocusGuards = props.noFocusGuards, noFocusGuards = _props$noFocusGuards === void 0 ? false : _props$noFocusGuards, _props$persistentFocu = props.persistentFocus, persistentFocus = _props$persistentFocu === void 0 ? false : _props$persistentFocu, _props$crossFrame = props.crossFrame, crossFrame = _props$crossFrame === void 0 ? true : _props$crossFrame, _props$autoFocus = props.autoFocus, autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus; props.allowTextSelection; var group = props.group, className = props.className, whiteList = props.whiteList, hasPositiveIndices = props.hasPositiveIndices, _props$shards = props.shards, shards = _props$shards === void 0 ? emptyArray : _props$shards, _props$as = props.as, Container = _props$as === void 0 ? "div" : _props$as, _props$lockProps = props.lockProps, containerProps = _props$lockProps === void 0 ? {} : _props$lockProps, SideCar = props.sideCar, _props$returnFocus = props.returnFocus, shouldReturnFocus = _props$returnFocus === void 0 ? false : _props$returnFocus, focusOptions = props.focusOptions, onActivationCallback = props.onActivation, onDeactivationCallback = props.onDeactivation;
+  var _useState3 = __mf_38({}), id = _useState3[0];
+  var onActivation = __mf_24(function(_ref) {
+    var captureFocusRestore = _ref.captureFocusRestore;
+    if (!originalFocusedElement.current) {
+      var _document;
+      var activeElement = (_document = document) == null ? void 0 : _document.activeElement;
+      originalFocusedElement.current = activeElement;
+      if (activeElement !== document.body) {
+        originalFocusedElement.current = captureFocusRestore(activeElement);
+      }
     }
-    var Children = __mf_19(function (_a) {
-        var stateRef = _a.stateRef, defaultState = _a.defaultState, children = _a.children;
-        var _b = __mf_38(defaultState.current), state = _b[0], setState = _b[1];
-        __mf_28(function () {
-            stateRef.current = setState;
-        }, []);
-        return children.apply(void 0, state);
-    }, function () { return true; });
-    return function Combiner(props) {
-        var defaultState = __mf_37(defaults(props));
-        var ref = __mf_37(function (state) { return (defaultState.current = state); });
-        return (__mf_14(__mf_3, null,
-            __mf_14(State, { stateRef: ref, props: props }),
-            __mf_14(Children, { stateRef: ref, defaultState: defaultState, children: props.children })));
+    if (observed.current && onActivationCallback) {
+      onActivationCallback(observed.current);
+    }
+    isActive.current = true;
+    update();
+  }, [onActivationCallback]);
+  var onDeactivation = __mf_24(function() {
+    isActive.current = false;
+    if (onDeactivationCallback) {
+      onDeactivationCallback(observed.current);
+    }
+    update();
+  }, [onDeactivationCallback]);
+  var returnFocus = __mf_24(function(allowDefer) {
+    var focusRestore = originalFocusedElement.current;
+    if (focusRestore) {
+      var returnFocusTo = (typeof focusRestore === "function" ? focusRestore() : focusRestore) || document.body;
+      var howToReturnFocus = typeof shouldReturnFocus === "function" ? shouldReturnFocus(returnFocusTo) : shouldReturnFocus;
+      if (howToReturnFocus) {
+        var returnFocusOptions = typeof howToReturnFocus === "object" ? howToReturnFocus : void 0;
+        originalFocusedElement.current = null;
+        if (allowDefer) {
+          Promise.resolve().then(function() {
+            return returnFocusTo.focus(returnFocusOptions);
+          });
+        } else {
+          returnFocusTo.focus(returnFocusOptions);
+        }
+      }
+    }
+  }, [shouldReturnFocus]);
+  var onFocus = __mf_24(function(event) {
+    if (isActive.current) {
+      mediumFocus.useMedium(event);
+    }
+  }, []);
+  var onBlur = mediumBlur.useMedium;
+  var setObserveNode = __mf_24(function(newObserved) {
+    if (observed.current !== newObserved) {
+      observed.current = newObserved;
+      setObserved(newObserved);
+    }
+  }, []);
+  var lockProps = _extends((_extends2 = {}, _extends2[FOCUS_DISABLED] = disabled && "disabled", _extends2[FOCUS_GROUP] = group, _extends2), containerProps);
+  var hasLeadingGuards = noFocusGuards !== true;
+  var hasTailingGuards = hasLeadingGuards && noFocusGuards !== "tail";
+  var mergedRef = useMergeRefs([parentRef, setObserveNode]);
+  var focusScopeValue = __mf_34(function() {
+    return {
+      observed,
+      shards,
+      enabled: !disabled,
+      get active() {
+        return isActive.current;
+      }
     };
-}
-
-var SideCar = function (_a) {
-    var sideCar = _a.sideCar, rest = __rest(_a, ["sideCar"]);
-    if (!sideCar) {
-        throw new Error('Sidecar: please provide `sideCar` property to import the right car');
-    }
-    var Target = sideCar.read();
-    if (!Target) {
-        throw new Error('Sidecar medium not found');
-    }
-    return __mf_14(Target, __assign({}, rest));
-};
-SideCar.isSideCarExport = true;
-function exportSidecar(medium, exported) {
-    medium.useMedium(exported);
-    return SideCar;
-}
-
-const es2015$1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  createMedium,
-  createSidecarMedium,
-  exportSidecar,
-  renderCar,
-  setConfig,
-  sidecar,
-  useSidecar
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const require$$0 = /*@__PURE__*/getAugmentedNamespace(es2015$1);
-
-var hasRequiredMedium;
-
-function requireMedium () {
-	if (hasRequiredMedium) return medium;
-	hasRequiredMedium = 1;
-
-	Object.defineProperty(medium, "__esModule", {
-	  value: true
-	});
-	medium.mediumSidecar = medium.mediumFocus = medium.mediumEffect = medium.mediumBlur = void 0;
-	var _useSidecar = require$$0;
-	medium.mediumFocus = (0, _useSidecar.createMedium)({}, function (_ref) {
-	  var target = _ref.target,
-	    currentTarget = _ref.currentTarget;
-	  return {
-	    target: target,
-	    currentTarget: currentTarget
-	  };
-	});
-	medium.mediumBlur = (0, _useSidecar.createMedium)();
-	medium.mediumEffect = (0, _useSidecar.createMedium)();
-	medium.mediumSidecar = (0, _useSidecar.createSidecarMedium)({
-	  async: true,
-	  ssr: typeof document !== 'undefined'
-	});
-	return medium;
-}
-
-var scope = {};
-
-var hasRequiredScope;
-
-function requireScope () {
-	if (hasRequiredScope) return scope;
-	hasRequiredScope = 1;
-
-	Object.defineProperty(scope, "__esModule", {
-	  value: true
-	});
-	scope.focusScope = void 0;
-	var _react = __mfDefaultExport$2;
-	scope.focusScope = /*#__PURE__*/(0, _react.createContext)(undefined);
-	return scope;
-}
-
-var hasRequiredLock;
-
-function requireLock () {
-	if (hasRequiredLock) return Lock;
-	hasRequiredLock = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof3 = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports["default"] = void 0;
-		var _extends2 = _interopRequireDefault(require_extends());
-		var _defineProperty2 = _interopRequireDefault(requireDefineProperty());
-		var _typeof2 = _interopRequireDefault(require_typeof());
-		var _slicedToArray2 = _interopRequireDefault(requireSlicedToArray());
-		var React = _interopRequireWildcard(__mfDefaultExport$2);
-		var constants = _interopRequireWildcard(require$$5$1);
-		var _useCallbackRef = require$$8;
-		var _FocusGuard = /*@__PURE__*/ requireFocusGuard();
-		var _medium = /*@__PURE__*/ requireMedium();
-		var _scope = /*@__PURE__*/ requireScope();
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof3(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		function ownKeys(e, r) {
-		  var t = Object.keys(e);
-		  if (Object.getOwnPropertySymbols) {
-		    var o = Object.getOwnPropertySymbols(e);
-		    r && (o = o.filter(function(r2) {
-		      return Object.getOwnPropertyDescriptor(e, r2).enumerable;
-		    })), t.push.apply(t, o);
-		  }
-		  return t;
-		}
-		function _objectSpread(e) {
-		  for (var r = 1; r < arguments.length; r++) {
-		    var t = null != arguments[r] ? arguments[r] : {};
-		    r % 2 ? ownKeys(Object(t), true).forEach(function(r2) {
-		      (0, _defineProperty2["default"])(e, r2, t[r2]);
-		    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r2) {
-		      Object.defineProperty(e, r2, Object.getOwnPropertyDescriptor(t, r2));
-		    });
-		  }
-		  return e;
-		}
-		var emptyArray = [];
-		var FocusLock = /* @__PURE__ */ React.forwardRef(function FocusLockUI(props, parentRef) {
-		  var _React$useState = React.useState(), _React$useState2 = (0, _slicedToArray2["default"])(_React$useState, 2), realObserved = _React$useState2[0], setObserved = _React$useState2[1];
-		  var observed = React.useRef();
-		  var isActive = React.useRef(false);
-		  var originalFocusedElement = React.useRef(null);
-		  var _React$useState3 = React.useState({}), _React$useState4 = (0, _slicedToArray2["default"])(_React$useState3, 2), update = _React$useState4[1];
-		  var children = props.children, _props$disabled = props.disabled, disabled = _props$disabled === void 0 ? false : _props$disabled, _props$noFocusGuards = props.noFocusGuards, noFocusGuards = _props$noFocusGuards === void 0 ? false : _props$noFocusGuards, _props$persistentFocu = props.persistentFocus, persistentFocus = _props$persistentFocu === void 0 ? false : _props$persistentFocu, _props$crossFrame = props.crossFrame, crossFrame = _props$crossFrame === void 0 ? true : _props$crossFrame, _props$autoFocus = props.autoFocus, autoFocus = _props$autoFocus === void 0 ? true : _props$autoFocus; props.allowTextSelection; var group = props.group, className = props.className, whiteList = props.whiteList, hasPositiveIndices = props.hasPositiveIndices, _props$shards = props.shards, shards = _props$shards === void 0 ? emptyArray : _props$shards, _props$as = props.as, Container = _props$as === void 0 ? "div" : _props$as, _props$lockProps = props.lockProps, containerProps = _props$lockProps === void 0 ? {} : _props$lockProps, SideCar = props.sideCar, _props$returnFocus = props.returnFocus, shouldReturnFocus = _props$returnFocus === void 0 ? false : _props$returnFocus, focusOptions = props.focusOptions, onActivationCallback = props.onActivation, onDeactivationCallback = props.onDeactivation;
-		  var _React$useState5 = React.useState({}), _React$useState6 = (0, _slicedToArray2["default"])(_React$useState5, 1), id = _React$useState6[0];
-		  var onActivation = React.useCallback(function(_ref) {
-		    var captureFocusRestore = _ref.captureFocusRestore;
-		    if (!originalFocusedElement.current) {
-		      var _document;
-		      var activeElement = (_document = document) === null || _document === void 0 ? void 0 : _document.activeElement;
-		      originalFocusedElement.current = activeElement;
-		      if (activeElement !== document.body) {
-		        originalFocusedElement.current = captureFocusRestore(activeElement);
-		      }
-		    }
-		    if (observed.current && onActivationCallback) {
-		      onActivationCallback(observed.current);
-		    }
-		    isActive.current = true;
-		    update();
-		  }, [onActivationCallback]);
-		  var onDeactivation = React.useCallback(function() {
-		    isActive.current = false;
-		    if (onDeactivationCallback) {
-		      onDeactivationCallback(observed.current);
-		    }
-		    update();
-		  }, [onDeactivationCallback]);
-		  var returnFocus = React.useCallback(function(allowDefer) {
-		    var focusRestore = originalFocusedElement.current;
-		    if (focusRestore) {
-		      var returnFocusTo = (typeof focusRestore === "function" ? focusRestore() : focusRestore) || document.body;
-		      var howToReturnFocus = typeof shouldReturnFocus === "function" ? shouldReturnFocus(returnFocusTo) : shouldReturnFocus;
-		      if (howToReturnFocus) {
-		        var returnFocusOptions = (0, _typeof2["default"])(howToReturnFocus) === "object" ? howToReturnFocus : void 0;
-		        originalFocusedElement.current = null;
-		        if (allowDefer) {
-		          Promise.resolve().then(function() {
-		            return returnFocusTo.focus(returnFocusOptions);
-		          });
-		        } else {
-		          returnFocusTo.focus(returnFocusOptions);
-		        }
-		      }
-		    }
-		  }, [shouldReturnFocus]);
-		  var onFocus = React.useCallback(function(event) {
-		    if (isActive.current) {
-		      _medium.mediumFocus.useMedium(event);
-		    }
-		  }, []);
-		  var onBlur = _medium.mediumBlur.useMedium;
-		  var setObserveNode = React.useCallback(function(newObserved) {
-		    if (observed.current !== newObserved) {
-		      observed.current = newObserved;
-		      setObserved(newObserved);
-		    }
-		  }, []);
-		  var lockProps = _objectSpread((0, _defineProperty2["default"])((0, _defineProperty2["default"])({}, constants.FOCUS_DISABLED, disabled && "disabled"), constants.FOCUS_GROUP, group), containerProps);
-		  var hasLeadingGuards = noFocusGuards !== true;
-		  var hasTailingGuards = hasLeadingGuards && noFocusGuards !== "tail";
-		  var mergedRef = (0, _useCallbackRef.useMergeRefs)([parentRef, setObserveNode]);
-		  var focusScopeValue = React.useMemo(function() {
-		    return {
-		      observed,
-		      shards,
-		      enabled: !disabled,
-		      active: isActive.current
-		    };
-		  }, [disabled, isActive.current, shards, realObserved]);
-		  return /* @__PURE__ */ React.createElement(React.Fragment, null, hasLeadingGuards && [
-		    /* @__PURE__ */ React.createElement("div", {
-		      key: "guard-first",
-		      "data-focus-guard": true,
-		      tabIndex: disabled ? -1 : 0,
-		      style: _FocusGuard.hiddenGuard
-		    }),
-		    hasPositiveIndices ? /* @__PURE__ */ React.createElement("div", {
-		      key: "guard-nearest",
-		      "data-focus-guard": true,
-		      tabIndex: disabled ? -1 : 1,
-		      style: _FocusGuard.hiddenGuard
-		    }) : null
-		  ], !disabled && /* @__PURE__ */ React.createElement(SideCar, {
-		    id,
-		    sideCar: _medium.mediumSidecar,
-		    observed: realObserved,
-		    disabled,
-		    persistentFocus,
-		    crossFrame,
-		    autoFocus,
-		    whiteList,
-		    shards,
-		    onActivation,
-		    onDeactivation,
-		    returnFocus,
-		    focusOptions
-		  }), /* @__PURE__ */ React.createElement(Container, (0, _extends2["default"])({
-		    ref: mergedRef
-		  }, lockProps, {
-		    className,
-		    onBlur,
-		    onFocus
-		  }), /* @__PURE__ */ React.createElement(_scope.focusScope.Provider, {
-		    value: focusScopeValue
-		  }, children)), hasTailingGuards && /* @__PURE__ */ React.createElement("div", {
-		    "data-focus-guard": true,
-		    tabIndex: disabled ? -1 : 0,
-		    style: _FocusGuard.hiddenGuard
-		  }));
-		});
-		FocusLock.propTypes = {};
-		exports["default"] = FocusLock; 
-	} (Lock));
-	return Lock;
-}
-
-var Trap = {};
-
-var toConsumableArray = {exports: {}};
-
-var arrayWithoutHoles = {exports: {}};
-
-var hasRequiredArrayWithoutHoles;
-
-function requireArrayWithoutHoles () {
-	if (hasRequiredArrayWithoutHoles) return arrayWithoutHoles.exports;
-	hasRequiredArrayWithoutHoles = 1;
-	(function (module) {
-		var arrayLikeToArray = requireArrayLikeToArray();
-		function _arrayWithoutHoles(arr) {
-		  if (Array.isArray(arr)) return arrayLikeToArray(arr);
-		}
-		module.exports = _arrayWithoutHoles, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (arrayWithoutHoles));
-	return arrayWithoutHoles.exports;
-}
-
-var iterableToArray = {exports: {}};
-
-var hasRequiredIterableToArray;
-
-function requireIterableToArray () {
-	if (hasRequiredIterableToArray) return iterableToArray.exports;
-	hasRequiredIterableToArray = 1;
-	(function (module) {
-		function _iterableToArray(iter) {
-		  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-		}
-		module.exports = _iterableToArray, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (iterableToArray));
-	return iterableToArray.exports;
-}
-
-var nonIterableSpread = {exports: {}};
-
-var hasRequiredNonIterableSpread;
-
-function requireNonIterableSpread () {
-	if (hasRequiredNonIterableSpread) return nonIterableSpread.exports;
-	hasRequiredNonIterableSpread = 1;
-	(function (module) {
-		function _nonIterableSpread() {
-		  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-		}
-		module.exports = _nonIterableSpread, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (nonIterableSpread));
-	return nonIterableSpread.exports;
-}
-
-var hasRequiredToConsumableArray;
-
-function requireToConsumableArray () {
-	if (hasRequiredToConsumableArray) return toConsumableArray.exports;
-	hasRequiredToConsumableArray = 1;
-	(function (module) {
-		var arrayWithoutHoles = requireArrayWithoutHoles();
-		var iterableToArray = requireIterableToArray();
-		var unsupportedIterableToArray = requireUnsupportedIterableToArray();
-		var nonIterableSpread = requireNonIterableSpread();
-		function _toConsumableArray(arr) {
-		  return arrayWithoutHoles(arr) || iterableToArray(arr) || unsupportedIterableToArray(arr) || nonIterableSpread();
-		}
-		module.exports = _toConsumableArray, module.exports.__esModule = true, module.exports["default"] = module.exports; 
-	} (toConsumableArray));
-	return toConsumableArray.exports;
-}
+  }, [disabled, isActive, shards, observed]);
+  return /* @__PURE__ */ __mfDefaultExport.createElement(__mf_3, null, hasLeadingGuards && [
+    /* @__PURE__ */ __mfDefaultExport.createElement("div", {
+      key: "guard-first",
+      "data-focus-guard": true,
+      tabIndex: disabled ? -1 : 0,
+      style: hiddenGuard
+    }),
+    hasPositiveIndices ? /* @__PURE__ */ __mfDefaultExport.createElement("div", {
+      key: "guard-nearest",
+      "data-focus-guard": true,
+      tabIndex: disabled ? -1 : 1,
+      style: hiddenGuard
+    }) : null
+  ], !disabled && /* @__PURE__ */ __mfDefaultExport.createElement(SideCar, {
+    id,
+    sideCar: mediumSidecar,
+    observed: realObserved,
+    disabled,
+    persistentFocus,
+    crossFrame,
+    autoFocus,
+    whiteList,
+    shards,
+    onActivation,
+    onDeactivation,
+    returnFocus,
+    focusOptions,
+    noFocusGuards
+  }), /* @__PURE__ */ __mfDefaultExport.createElement(Container, _extends({
+    ref: mergedRef
+  }, lockProps, {
+    className,
+    onBlur,
+    onFocus
+  }), /* @__PURE__ */ __mfDefaultExport.createElement(focusScope.Provider, {
+    value: focusScopeValue
+  }, children)), hasTailingGuards && /* @__PURE__ */ __mfDefaultExport.createElement("div", {
+    "data-focus-guard": true,
+    tabIndex: disabled ? -1 : 0,
+    style: hiddenGuard
+  }));
+});
+FocusLock.propTypes = {};
 
 function _typeof(o) {
   "@babel/helpers - typeof";
@@ -9808,13 +8884,6 @@ function withSideEffect(reducePropsToState, handleStateChangeOnClient) {
     return SideEffect;
   };
 }
-
-const index_es = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  default: withSideEffect
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const require$$5 = /*@__PURE__*/getAugmentedNamespace(index_es);
 
 /*
 IE11 support
@@ -10264,8 +9333,16 @@ var newFocus = function (innerNodes, innerTabbables, outerNodes, activeElement, 
     var firstNodeIndex = outerNodes.indexOf(firstFocus);
     var lastNodeIndex = outerNodes.indexOf(lastFocus);
     var correctedNodes = correctNodes(outerNodes);
-    var correctedIndex = activeElement !== undefined ? correctedNodes.indexOf(activeElement) : -1;
-    var correctedIndexDiff = correctedIndex - (lastNode ? correctedNodes.indexOf(lastNode) : activeIndex);
+    var currentFocusableIndex = activeElement !== undefined ? correctedNodes.indexOf(activeElement) : -1;
+    var previousFocusableIndex = lastNode ? correctedNodes.indexOf(lastNode) : currentFocusableIndex;
+    var tabbableNodes = correctedNodes.filter(function (node) { return node.tabIndex >= 0; });
+    var currentTabbableIndex = activeElement !== undefined ? tabbableNodes.indexOf(activeElement) : -1;
+    var previousTabbableIndex = lastNode ? tabbableNodes.indexOf(lastNode) : currentTabbableIndex;
+    var focusIndexDiff = currentTabbableIndex >= 0 && previousTabbableIndex >= 0
+        ? // old/new are tabbables, measure distance in tabbable space
+            previousTabbableIndex - currentTabbableIndex
+        : // or else measure in focusable space
+            previousFocusableIndex - currentFocusableIndex;
     // old focus
     if (!indexDiff && lastNodeInside >= 0) {
         return lastNodeInside;
@@ -10288,7 +9365,7 @@ var newFocus = function (innerNodes, innerTabbables, outerNodes, activeElement, 
         return returnFirstNode;
     }
     // jump out, but not on the guard
-    if (indexDiff && Math.abs(correctedIndexDiff) > 1) {
+    if (indexDiff && Math.abs(focusIndexDiff) > 1) {
         return lastNodeInside;
     }
     // focus above lock
@@ -10536,6 +9613,11 @@ var moveFocusInside = function (topNode, lastNode, options) {
 function weakRef(value) {
     if (!value)
         return null;
+    // #68 Safari 14.1 dont have it yet
+    // FIXME: remove in 2025
+    if (typeof WeakRef === 'undefined') {
+        return function () { return value || null; };
+    }
     var w = value ? new WeakRef(value) : null;
     return function () { return (w === null || w === void 0 ? void 0 : w.deref()) || null; };
 }
@@ -10730,867 +9812,258 @@ var focusLastElement = function (scope, options) {
     pickBoundary(scope, options, 'last');
 };
 
-/**
- * magic symbols to control focus behavior from DOM
- * see description of every particular one
- */
-var constants = allConstants;
-/**
- * @deprecated - please use {@link moveFocusInside} named export
- */
-var deprecated_default_moveFocusInside = moveFocusInside;
-//
+function deferAction(action) {
+  setTimeout(action, 1);
+}
+var extractRef = function extractRef(ref) {
+  return ref && 'current' in ref ? ref.current : ref;
+};
 
-const es2015 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
-  __proto__: null,
-  captureFocusRestore,
-  constants,
-  default: deprecated_default_moveFocusInside,
-  expandFocusableNodes,
-  focusFirstElement,
+var focusOnBody = function focusOnBody2() {
+  return document && document.activeElement === document.body;
+};
+var isFreeFocus = function isFreeFocus2() {
+  return focusOnBody() || focusIsHidden();
+};
+var lastActiveTrap = null;
+var lastActiveFocus = null;
+var tryRestoreFocus = function tryRestoreFocus2() {
+  return null;
+};
+var lastPortaledElement = null;
+var focusWasOutsideWindow = false;
+var windowFocused = false;
+var defaultWhitelist = function defaultWhitelist2() {
+  return true;
+};
+var focusWhitelisted = function focusWhitelisted2(activeElement) {
+  return (lastActiveTrap.whiteList || defaultWhitelist)(activeElement);
+};
+var recordPortal = function recordPortal2(observerNode, portaledElement) {
+  lastPortaledElement = {
+    observerNode,
+    portaledElement
+  };
+};
+var focusIsPortaledPair = function focusIsPortaledPair2(element) {
+  return lastPortaledElement && lastPortaledElement.portaledElement === element;
+};
+function autoGuard(startIndex, end, step, allNodes) {
+  var lastGuard = null;
+  var i = startIndex;
+  do {
+    var item = allNodes[i];
+    if (item.guard) {
+      if (item.node.dataset.focusAutoGuard) {
+        lastGuard = item;
+      }
+    } else if (item.lockItem) {
+      if (i !== startIndex) {
+        return;
+      }
+      lastGuard = null;
+    } else {
+      break;
+    }
+  } while ((i += step) !== end);
+  if (lastGuard) {
+    lastGuard.node.tabIndex = 0;
+  }
+}
+var focusWasOutside = function focusWasOutside2(crossFrameOption) {
+  if (crossFrameOption) {
+    return Boolean(focusWasOutsideWindow);
+  }
+  return focusWasOutsideWindow === "meanwhile";
+};
+var checkInHost = function checkInHost2(check, el, boundary) {
+  return el && (el.host === check && (!el.activeElement || boundary.contains(el.activeElement)) || el.parentNode && checkInHost2(check, el.parentNode, boundary));
+};
+var withinHost = function withinHost2(activeElement, workingArea) {
+  return workingArea.some(function(area) {
+    return checkInHost(activeElement, area, area);
+  });
+};
+var getNodeFocusables = function getNodeFocusables2(nodes) {
+  return getFocusableNodes(nodes, /* @__PURE__ */ new Map());
+};
+var isNotFocusable = function isNotFocusable2(node) {
+  return !getNodeFocusables([node.parentNode]).some(function(el) {
+    return el.node === node;
+  });
+};
+var activateTrap = function activateTrap2() {
+  var result = false;
+  if (lastActiveTrap) {
+    var _lastActiveTrap = lastActiveTrap, observed = _lastActiveTrap.observed, persistentFocus = _lastActiveTrap.persistentFocus, autoFocus = _lastActiveTrap.autoFocus, shards = _lastActiveTrap.shards, crossFrame = _lastActiveTrap.crossFrame, focusOptions = _lastActiveTrap.focusOptions, noFocusGuards = _lastActiveTrap.noFocusGuards;
+    var workingNode = observed || lastPortaledElement && lastPortaledElement.portaledElement;
+    if (focusOnBody() && lastActiveFocus && lastActiveFocus !== document.body) {
+      if (!document.body.contains(lastActiveFocus) || isNotFocusable(lastActiveFocus)) {
+        var newTarget = tryRestoreFocus();
+        if (newTarget) {
+          newTarget.focus();
+        }
+      }
+    }
+    var activeElement = document && document.activeElement;
+    if (workingNode) {
+      var workingArea = [workingNode].concat(shards.map(extractRef).filter(Boolean));
+      var shouldForceRestoreFocus = function shouldForceRestoreFocus2() {
+        if (!focusWasOutside(crossFrame) || !noFocusGuards || !lastActiveFocus || windowFocused) {
+          return false;
+        }
+        var nodes = getNodeFocusables(workingArea);
+        var lastIndex = nodes.findIndex(function(_ref) {
+          var node = _ref.node;
+          return node === lastActiveFocus;
+        });
+        return lastIndex === 0 || lastIndex === nodes.length - 1;
+      };
+      if (!activeElement || focusWhitelisted(activeElement)) {
+        if (persistentFocus || shouldForceRestoreFocus() || !isFreeFocus() || !lastActiveFocus && autoFocus) {
+          if (workingNode && !(focusInside(workingArea) || activeElement && withinHost(activeElement, workingArea) || focusIsPortaledPair(activeElement))) {
+            if (document && !lastActiveFocus && activeElement && !autoFocus) {
+              if (activeElement.blur) {
+                activeElement.blur();
+              }
+              document.body.focus();
+            } else {
+              result = moveFocusInside(workingArea, lastActiveFocus, {
+                focusOptions
+              });
+              lastPortaledElement = {};
+            }
+          }
+          lastActiveFocus = document && document.activeElement;
+          if (lastActiveFocus !== document.body) {
+            tryRestoreFocus = captureFocusRestore(lastActiveFocus);
+          }
+          focusWasOutsideWindow = false;
+        }
+      }
+      if (document && activeElement !== document.activeElement && document.querySelector("[data-focus-auto-guard]")) {
+        var newActiveElement = document && document.activeElement;
+        var allNodes = expandFocusableNodes(workingArea);
+        var focusedIndex = allNodes.map(function(_ref2) {
+          var node = _ref2.node;
+          return node;
+        }).indexOf(newActiveElement);
+        if (focusedIndex > -1) {
+          allNodes.filter(function(_ref3) {
+            var guard = _ref3.guard, node = _ref3.node;
+            return guard && node.dataset.focusAutoGuard;
+          }).forEach(function(_ref4) {
+            var node = _ref4.node;
+            return node.removeAttribute("tabIndex");
+          });
+          autoGuard(focusedIndex, allNodes.length, 1, allNodes);
+          autoGuard(focusedIndex, -1, -1, allNodes);
+        }
+      }
+    }
+  }
+  return result;
+};
+var onTrap = function onTrap2(event) {
+  if (activateTrap() && event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+};
+var onBlur = function onBlur2() {
+  return deferAction(activateTrap);
+};
+var onFocus = function onFocus2(event) {
+  var source = event.target;
+  var currentNode = event.currentTarget;
+  if (!currentNode.contains(source)) {
+    recordPortal(currentNode, source);
+  }
+};
+var FocusWatcher = function FocusWatcher2() {
+  return null;
+};
+var onWindowFocus = function onWindowFocus2() {
+  windowFocused = true;
+};
+var onWindowBlur = function onWindowBlur2() {
+  windowFocused = false;
+  focusWasOutsideWindow = "just";
+  deferAction(function() {
+    focusWasOutsideWindow = "meanwhile";
+  });
+};
+var attachHandler = function attachHandler2() {
+  document.addEventListener("focusin", onTrap);
+  document.addEventListener("focusout", onBlur);
+  window.addEventListener("focus", onWindowFocus);
+  window.addEventListener("blur", onWindowBlur);
+};
+var detachHandler = function detachHandler2() {
+  document.removeEventListener("focusin", onTrap);
+  document.removeEventListener("focusout", onBlur);
+  window.removeEventListener("focus", onWindowFocus);
+  window.removeEventListener("blur", onWindowBlur);
+};
+function reducePropsToState(propsList) {
+  return propsList.filter(function(_ref6) {
+    var disabled = _ref6.disabled;
+    return !disabled;
+  });
+}
+var focusLockAPI = {
+  moveFocusInside,
   focusInside,
-  focusIsHidden,
-  focusLastElement,
   focusNextElement,
   focusPrevElement,
-  focusSolver,
-  getFocusableNodes,
-  getRelativeFocusable,
-  getTabbableNodes,
-  moveFocusInside
-}, Symbol.toStringTag, { value: 'Module' }));
-
-const require$$6 = /*@__PURE__*/getAugmentedNamespace(es2015);
-
-var util = {};
-
-var hasRequiredUtil;
-
-function requireUtil () {
-	if (hasRequiredUtil) return util;
-	hasRequiredUtil = 1;
-
-	Object.defineProperty(util, "__esModule", {
-	  value: true
-	});
-	util.deferAction = deferAction;
-	util.inlineProp = util.extractRef = void 0;
-	function deferAction(action) {
-	  setTimeout(action, 1);
-	}
-	util.inlineProp = function inlineProp(name, value) {
-	  var obj = {};
-	  obj[name] = value;
-	  return obj;
-	};
-	util.extractRef = function extractRef(ref) {
-	  return ref && 'current' in ref ? ref.current : ref;
-	};
-	return util;
+  focusFirstElement,
+  focusLastElement,
+  captureFocusRestore
+};
+function handleStateChangeOnClient(traps) {
+  var trap = traps.slice(-1)[0];
+  if (trap && !lastActiveTrap) {
+    attachHandler();
+  }
+  var lastTrap = lastActiveTrap;
+  var sameTrap = lastTrap && trap && trap.id === lastTrap.id;
+  lastActiveTrap = trap;
+  if (lastTrap && !sameTrap) {
+    lastTrap.onDeactivation();
+    if (!traps.filter(function(_ref7) {
+      var id = _ref7.id;
+      return id === lastTrap.id;
+    }).length) {
+      lastTrap.returnFocus(!trap);
+    }
+  }
+  if (trap) {
+    lastActiveFocus = null;
+    if (!sameTrap || lastTrap.observed !== trap.observed) {
+      trap.onActivation(focusLockAPI);
+    }
+    activateTrap();
+    deferAction(activateTrap);
+  } else {
+    detachHandler();
+    lastActiveFocus = null;
+  }
 }
+mediumFocus.assignSyncMedium(onFocus);
+mediumBlur.assignMedium(onBlur);
+mediumEffect.assignMedium(function(cb) {
+  return cb(focusLockAPI);
+});
+const FocusTrap = withSideEffect(reducePropsToState, handleStateChangeOnClient)(FocusWatcher);
 
-var hasRequiredTrap;
-
-function requireTrap () {
-	if (hasRequiredTrap) return Trap;
-	hasRequiredTrap = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports["default"] = void 0;
-		var _toConsumableArray2 = _interopRequireDefault(requireToConsumableArray());
-		_interopRequireWildcard(__mfDefaultExport$2);
-		_interopRequireDefault(/*@__PURE__*/ requirePropTypes());
-		var _reactClientsideEffect = _interopRequireDefault(require$$5);
-		var _focusLock = require$$6;
-		var _util = /*@__PURE__*/ requireUtil();
-		var _medium = /*@__PURE__*/ requireMedium();
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		var focusOnBody = function focusOnBody2() {
-		  return document && document.activeElement === document.body;
-		};
-		var isFreeFocus = function isFreeFocus2() {
-		  return focusOnBody() || (0, _focusLock.focusIsHidden)();
-		};
-		var lastActiveTrap = null;
-		var lastActiveFocus = null;
-		var lastPortaledElement = null;
-		var focusWasOutsideWindow = false;
-		var defaultWhitelist = function defaultWhitelist2() {
-		  return true;
-		};
-		var focusWhitelisted = function focusWhitelisted2(activeElement) {
-		  return (lastActiveTrap.whiteList || defaultWhitelist)(activeElement);
-		};
-		var recordPortal = function recordPortal2(observerNode, portaledElement) {
-		  lastPortaledElement = {
-		    observerNode,
-		    portaledElement
-		  };
-		};
-		var focusIsPortaledPair = function focusIsPortaledPair2(element) {
-		  return lastPortaledElement && lastPortaledElement.portaledElement === element;
-		};
-		function autoGuard(startIndex, end, step, allNodes) {
-		  var lastGuard = null;
-		  var i = startIndex;
-		  do {
-		    var item = allNodes[i];
-		    if (item.guard) {
-		      if (item.node.dataset.focusAutoGuard) {
-		        lastGuard = item;
-		      }
-		    } else if (item.lockItem) {
-		      if (i !== startIndex) {
-		        return;
-		      }
-		      lastGuard = null;
-		    } else {
-		      break;
-		    }
-		  } while ((i += step) !== end);
-		  if (lastGuard) {
-		    lastGuard.node.tabIndex = 0;
-		  }
-		}
-		var focusWasOutside = function focusWasOutside2(crossFrameOption) {
-		  if (crossFrameOption) {
-		    return Boolean(focusWasOutsideWindow);
-		  }
-		  return focusWasOutsideWindow === "meanwhile";
-		};
-		var checkInHost = function checkInHost2(check, el, boundary) {
-		  return el && (el.host === check && (!el.activeElement || boundary.contains(el.activeElement)) || el.parentNode && checkInHost2(check, el.parentNode, boundary));
-		};
-		var withinHost = function withinHost2(activeElement, workingArea) {
-		  return workingArea.some(function(area) {
-		    return checkInHost(activeElement, area, area);
-		  });
-		};
-		var activateTrap = function activateTrap2() {
-		  var result = false;
-		  if (lastActiveTrap) {
-		    var _lastActiveTrap = lastActiveTrap, observed = _lastActiveTrap.observed, persistentFocus = _lastActiveTrap.persistentFocus, autoFocus = _lastActiveTrap.autoFocus, shards = _lastActiveTrap.shards, crossFrame = _lastActiveTrap.crossFrame, focusOptions = _lastActiveTrap.focusOptions;
-		    var workingNode = observed || lastPortaledElement && lastPortaledElement.portaledElement;
-		    var activeElement = document && document.activeElement;
-		    if (workingNode) {
-		      var workingArea = [workingNode].concat((0, _toConsumableArray2["default"])(shards.map(_util.extractRef).filter(Boolean)));
-		      if (!activeElement || focusWhitelisted(activeElement)) {
-		        if (persistentFocus || focusWasOutside(crossFrame) || !isFreeFocus() || !lastActiveFocus && autoFocus) {
-		          if (workingNode && !((0, _focusLock.focusInside)(workingArea) || activeElement && withinHost(activeElement, workingArea) || focusIsPortaledPair(activeElement))) {
-		            if (document && !lastActiveFocus && activeElement && !autoFocus) {
-		              if (activeElement.blur) {
-		                activeElement.blur();
-		              }
-		              document.body.focus();
-		            } else {
-		              result = (0, _focusLock.moveFocusInside)(workingArea, lastActiveFocus, {
-		                focusOptions
-		              });
-		              lastPortaledElement = {};
-		            }
-		          }
-		          focusWasOutsideWindow = false;
-		          lastActiveFocus = document && document.activeElement;
-		        }
-		      }
-		      if (document && activeElement !== document.activeElement && document.querySelector("[data-focus-auto-guard]")) {
-		        var newActiveElement = document && document.activeElement;
-		        var allNodes = (0, _focusLock.expandFocusableNodes)(workingArea);
-		        var focusedIndex = allNodes.map(function(_ref) {
-		          var node = _ref.node;
-		          return node;
-		        }).indexOf(newActiveElement);
-		        if (focusedIndex > -1) {
-		          allNodes.filter(function(_ref2) {
-		            var guard = _ref2.guard, node = _ref2.node;
-		            return guard && node.dataset.focusAutoGuard;
-		          }).forEach(function(_ref3) {
-		            var node = _ref3.node;
-		            return node.removeAttribute("tabIndex");
-		          });
-		          autoGuard(focusedIndex, allNodes.length, 1, allNodes);
-		          autoGuard(focusedIndex, -1, -1, allNodes);
-		        }
-		      }
-		    }
-		  }
-		  return result;
-		};
-		var onTrap = function onTrap2(event) {
-		  if (activateTrap() && event) {
-		    event.stopPropagation();
-		    event.preventDefault();
-		  }
-		};
-		var onBlur = function onBlur2() {
-		  return (0, _util.deferAction)(activateTrap);
-		};
-		var onFocus = function onFocus2(event) {
-		  var source = event.target;
-		  var currentNode = event.currentTarget;
-		  if (!currentNode.contains(source)) {
-		    recordPortal(currentNode, source);
-		  }
-		};
-		var FocusWatcher = function FocusWatcher2() {
-		  return null;
-		};
-		var onWindowBlur = function onWindowBlur2() {
-		  focusWasOutsideWindow = "just";
-		  (0, _util.deferAction)(function() {
-		    focusWasOutsideWindow = "meanwhile";
-		  });
-		};
-		var attachHandler = function attachHandler2() {
-		  document.addEventListener("focusin", onTrap);
-		  document.addEventListener("focusout", onBlur);
-		  window.addEventListener("blur", onWindowBlur);
-		};
-		var detachHandler = function detachHandler2() {
-		  document.removeEventListener("focusin", onTrap);
-		  document.removeEventListener("focusout", onBlur);
-		  window.removeEventListener("blur", onWindowBlur);
-		};
-		function reducePropsToState(propsList) {
-		  return propsList.filter(function(_ref5) {
-		    var disabled = _ref5.disabled;
-		    return !disabled;
-		  });
-		}
-		var focusLockAPI = {
-		  moveFocusInside: _focusLock.moveFocusInside,
-		  focusInside: _focusLock.focusInside,
-		  focusNextElement: _focusLock.focusNextElement,
-		  focusPrevElement: _focusLock.focusPrevElement,
-		  focusFirstElement: _focusLock.focusFirstElement,
-		  focusLastElement: _focusLock.focusLastElement,
-		  captureFocusRestore: _focusLock.captureFocusRestore
-		};
-		function handleStateChangeOnClient(traps) {
-		  var trap = traps.slice(-1)[0];
-		  if (trap && !lastActiveTrap) {
-		    attachHandler();
-		  }
-		  var lastTrap = lastActiveTrap;
-		  var sameTrap = lastTrap && trap && trap.id === lastTrap.id;
-		  lastActiveTrap = trap;
-		  if (lastTrap && !sameTrap) {
-		    lastTrap.onDeactivation();
-		    if (!traps.filter(function(_ref6) {
-		      var id = _ref6.id;
-		      return id === lastTrap.id;
-		    }).length) {
-		      lastTrap.returnFocus(!trap);
-		    }
-		  }
-		  if (trap) {
-		    lastActiveFocus = null;
-		    if (!sameTrap || lastTrap.observed !== trap.observed) {
-		      trap.onActivation(focusLockAPI);
-		    }
-		    activateTrap();
-		    (0, _util.deferAction)(activateTrap);
-		  } else {
-		    detachHandler();
-		    lastActiveFocus = null;
-		  }
-		}
-		_medium.mediumFocus.assignSyncMedium(onFocus);
-		_medium.mediumBlur.assignMedium(onBlur);
-		_medium.mediumEffect.assignMedium(function(cb) {
-		  return cb(focusLockAPI);
-		});
-		exports["default"] = (0, _reactClientsideEffect["default"])(reducePropsToState, handleStateChangeOnClient)(FocusWatcher); 
-	} (Trap));
-	return Trap;
-}
-
-var hasRequiredCombination;
-
-function requireCombination () {
-	if (hasRequiredCombination) return Combination;
-	hasRequiredCombination = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports["default"] = void 0;
-		var _objectWithoutProperties2 = _interopRequireDefault(requireObjectWithoutProperties());
-		var _extends2 = _interopRequireDefault(require_extends());
-		var React = _interopRequireWildcard(__mfDefaultExport$2);
-		var _Lock = _interopRequireDefault(/*@__PURE__*/ requireLock());
-		var _Trap = _interopRequireDefault(/*@__PURE__*/ requireTrap());
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		var FocusLockCombination = /* @__PURE__ */ React.forwardRef(function FocusLockUICombination(props, ref) {
-		  return /* @__PURE__ */ React.createElement(_Lock["default"], (0, _extends2["default"])({
-		    sideCar: _Trap["default"],
-		    ref
-		  }, props));
-		});
-		var _ref = _Lock["default"].propTypes || {}; _ref.sideCar; (0, _objectWithoutProperties2["default"])(_ref, ["sideCar"]);
-		FocusLockCombination.propTypes = {};
-		exports["default"] = FocusLockCombination; 
-	} (Combination));
-	return Combination;
-}
-
-var UI = {};
-
-var AutoFocusInside = {};
-
-var hasRequiredAutoFocusInside;
-
-function requireAutoFocusInside () {
-	if (hasRequiredAutoFocusInside) return AutoFocusInside;
-	hasRequiredAutoFocusInside = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports["default"] = void 0;
-		var _extends2 = _interopRequireDefault(require_extends());
-		var React = _interopRequireWildcard(__mfDefaultExport$2);
-		_interopRequireDefault(/*@__PURE__*/ requirePropTypes());
-		var constants = _interopRequireWildcard(require$$5$1);
-		var _util = /*@__PURE__*/ requireUtil();
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		var AutoFocusInside = function AutoFocusInside2(_ref) {
-		  var _ref$disabled = _ref.disabled, disabled = _ref$disabled === void 0 ? false : _ref$disabled, children = _ref.children, _ref$className = _ref.className, className = _ref$className === void 0 ? void 0 : _ref$className;
-		  return /* @__PURE__ */ React.createElement("div", (0, _extends2["default"])({}, (0, _util.inlineProp)(constants.FOCUS_AUTO, !disabled), {
-		    className
-		  }), children);
-		};
-		AutoFocusInside.propTypes = {};
-		exports["default"] = AutoFocusInside; 
-	} (AutoFocusInside));
-	return AutoFocusInside;
-}
-
-var MoveFocusInside = {};
-
-var hasRequiredMoveFocusInside;
-
-function requireMoveFocusInside () {
-	if (hasRequiredMoveFocusInside) return MoveFocusInside;
-	hasRequiredMoveFocusInside = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports.useFocusInside = exports["default"] = void 0;
-		var _extends2 = _interopRequireDefault(require_extends());
-		var React = _interopRequireWildcard(__mfDefaultExport$2);
-		_interopRequireDefault(/*@__PURE__*/ requirePropTypes());
-		var constants = _interopRequireWildcard(require$$5$1);
-		var _util = /*@__PURE__*/ requireUtil();
-		var _medium = /*@__PURE__*/ requireMedium();
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		var useFocusInside = exports.useFocusInside = function useFocusInside2(observedRef) {
-		  React.useEffect(function() {
-		    var enabled = true;
-		    _medium.mediumEffect.useMedium(function(car) {
-		      var observed = observedRef && observedRef.current;
-		      if (enabled && observed) {
-		        if (!car.focusInside(observed)) {
-		          car.moveFocusInside(observed, null);
-		        }
-		      }
-		    });
-		    return function() {
-		      enabled = false;
-		    };
-		  }, [observedRef]);
-		};
-		function MoveFocusInside(_ref) {
-		  var _ref$disabled = _ref.disabled, isDisabled = _ref$disabled === void 0 ? false : _ref$disabled, className = _ref.className, children = _ref.children;
-		  var ref = React.useRef(null);
-		  useFocusInside(isDisabled ? void 0 : ref);
-		  return /* @__PURE__ */ React.createElement("div", (0, _extends2["default"])({}, (0, _util.inlineProp)(constants.FOCUS_AUTO, !isDisabled), {
-		    ref,
-		    className
-		  }), children);
-		}
-		MoveFocusInside.propTypes = {};
-		exports["default"] = MoveFocusInside; 
-	} (MoveFocusInside));
-	return MoveFocusInside;
-}
-
-var FreeFocusInside = {};
-
-var hasRequiredFreeFocusInside;
-
-function requireFreeFocusInside () {
-	if (hasRequiredFreeFocusInside) return FreeFocusInside;
-	hasRequiredFreeFocusInside = 1;
-	(function (exports) {
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		exports["default"] = void 0;
-		var _extends2 = _interopRequireDefault(require_extends());
-		var React = _interopRequireWildcard(__mfDefaultExport$2);
-		_interopRequireDefault(/*@__PURE__*/ requirePropTypes());
-		var constants = _interopRequireWildcard(require$$5$1);
-		var _util = /*@__PURE__*/ requireUtil();
-		function _getRequireWildcardCache(e) {
-		  if ("function" != typeof WeakMap) return null;
-		  var r = /* @__PURE__ */ new WeakMap(), t = /* @__PURE__ */ new WeakMap();
-		  return (_getRequireWildcardCache = function _getRequireWildcardCache2(e2) {
-		    return e2 ? t : r;
-		  })(e);
-		}
-		function _interopRequireWildcard(e, r) {
-		  if (e && e.__esModule) return e;
-		  if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e };
-		  var t = _getRequireWildcardCache(r);
-		  if (t && t.has(e)) return t.get(e);
-		  var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor;
-		  for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) {
-		    var i = a ? Object.getOwnPropertyDescriptor(e, u) : null;
-		    i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u];
-		  }
-		  return n["default"] = e, t && t.set(e, n), n;
-		}
-		var FreeFocusInside = function FreeFocusInside2(_ref) {
-		  var children = _ref.children, className = _ref.className;
-		  return /* @__PURE__ */ React.createElement("div", (0, _extends2["default"])({}, (0, _util.inlineProp)(constants.FOCUS_ALLOW, true), {
-		    className
-		  }), children);
-		};
-		FreeFocusInside.propTypes = {};
-		exports["default"] = FreeFocusInside; 
-	} (FreeFocusInside));
-	return FreeFocusInside;
-}
-
-var useFocusScope = {};
-
-var hasRequiredUseFocusScope;
-
-function requireUseFocusScope () {
-	if (hasRequiredUseFocusScope) return useFocusScope;
-	hasRequiredUseFocusScope = 1;
-
-	var _interopRequireDefault = interopRequireDefaultExports;
-	Object.defineProperty(useFocusScope, "__esModule", {
-	  value: true
-	});
-	useFocusScope.useFocusScope = useFocusScope.useFocusController = void 0;
-	var _toConsumableArray2 = _interopRequireDefault(requireToConsumableArray());
-	var _defineProperty2 = _interopRequireDefault(requireDefineProperty());
-	var _react = __mfDefaultExport$2;
-	var _scope = /*@__PURE__*/ requireScope();
-	var _medium = /*@__PURE__*/ requireMedium();
-	var _util = /*@__PURE__*/ requireUtil();
-	function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-	function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), true).forEach(function (r) { (0, _defineProperty2["default"])(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-	var collapseRefs = function collapseRefs(shards) {
-	  return shards.map(_util.extractRef).filter(Boolean);
-	};
-	var withMedium = function withMedium(fn) {
-	  return new Promise(function (resolve) {
-	    return _medium.mediumEffect.useMedium(function () {
-	      resolve(fn.apply(void 0, arguments));
-	    });
-	  });
-	};
-	var useFocusController = useFocusScope.useFocusController = function useFocusController() {
-	  for (var _len = arguments.length, shards = new Array(_len), _key = 0; _key < _len; _key++) {
-	    shards[_key] = arguments[_key];
-	  }
-	  if (!shards.length) {
-	    throw new Error('useFocusController requires at least one target element');
-	  }
-	  var ref = (0, _react.useRef)(shards);
-	  ref.current = shards;
-	  return (0, _react.useMemo)(function () {
-	    return {
-	      autoFocus: function autoFocus() {
-	        var focusOptions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-	        return withMedium(function (car) {
-	          return car.moveFocusInside(collapseRefs(ref.current), null, focusOptions);
-	        });
-	      },
-	      focusNext: function focusNext(options) {
-	        return withMedium(function (car) {
-	          car.moveFocusInside(collapseRefs(ref.current), null);
-	          car.focusNextElement(document.activeElement, _objectSpread({
-	            scope: collapseRefs(ref.current)
-	          }, options));
-	        });
-	      },
-	      focusPrev: function focusPrev(options) {
-	        return withMedium(function (car) {
-	          car.moveFocusInside(collapseRefs(ref.current), null);
-	          car.focusPrevElement(document.activeElement, _objectSpread({
-	            scope: collapseRefs(ref.current)
-	          }, options));
-	        });
-	      },
-	      focusFirst: function focusFirst(options) {
-	        return withMedium(function (car) {
-	          car.focusFirstElement(collapseRefs(ref.current), options);
-	        });
-	      },
-	      focusLast: function focusLast(options) {
-	        return withMedium(function (car) {
-	          car.focusLastElement(collapseRefs(ref.current), options);
-	        });
-	      }
-	    };
-	  }, []);
-	};
-	useFocusScope.useFocusScope = function useFocusScope() {
-	  var scope = (0, _react.useContext)(_scope.focusScope);
-	  if (!scope) {
-	    throw new Error('FocusLock is required to operate with FocusScope');
-	  }
-	  return useFocusController.apply(void 0, [scope.observed].concat((0, _toConsumableArray2["default"])(scope.shards)));
-	};
-	return useFocusScope;
-}
-
-var useFocusState = {};
-
-var nanoEvents = {};
-
-var hasRequiredNanoEvents;
-
-function requireNanoEvents () {
-	if (hasRequiredNanoEvents) return nanoEvents;
-	hasRequiredNanoEvents = 1;
-
-	Object.defineProperty(nanoEvents, "__esModule", {
-	  value: true
-	});
-	nanoEvents.createNanoEvents = void 0;
-	nanoEvents.createNanoEvents = function createNanoEvents() {
-	  return {
-	    emit: function emit(event) {
-	      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-	        args[_key - 1] = arguments[_key];
-	      }
-	      for (var i = 0, callbacks = this.events[event] || [], length = callbacks.length; i < length; i++) {
-	        callbacks[i].apply(callbacks, args);
-	      }
-	    },
-	    events: {},
-	    on: function on(event, cb) {
-	      var _this$events,
-	        _this = this;
-	      ((_this$events = this.events)[event] || (_this$events[event] = [])).push(cb);
-	      return function () {
-	        var _this$events$event;
-	        _this.events[event] = (_this$events$event = _this.events[event]) === null || _this$events$event === void 0 ? void 0 : _this$events$event.filter(function (i) {
-	          return cb !== i;
-	        });
-	      };
-	    }
-	  };
-	};
-	return nanoEvents;
-}
-
-var hasRequiredUseFocusState;
-
-function requireUseFocusState () {
-	if (hasRequiredUseFocusState) return useFocusState;
-	hasRequiredUseFocusState = 1;
-
-	var _interopRequireDefault = interopRequireDefaultExports;
-	Object.defineProperty(useFocusState, "__esModule", {
-	  value: true
-	});
-	useFocusState.useFocusState = void 0;
-	var _slicedToArray2 = _interopRequireDefault(requireSlicedToArray());
-	var _react = __mfDefaultExport$2;
-	var _nanoEvents = /*@__PURE__*/ requireNanoEvents();
-	var mainbus = (0, _nanoEvents.createNanoEvents)();
-	var subscribeCounter = 0;
-	var onFocusIn = function onFocusIn(event) {
-	  return mainbus.emit('assign', event.target);
-	};
-	var onFocusOut = function onFocusOut(event) {
-	  return mainbus.emit('reset', event.target);
-	};
-	var useDocumentFocusSubscribe = function useDocumentFocusSubscribe() {
-	  (0, _react.useEffect)(function () {
-	    if (!subscribeCounter) {
-	      document.addEventListener('focusin', onFocusIn);
-	      document.addEventListener('focusout', onFocusOut);
-	    }
-	    subscribeCounter += 1;
-	    return function () {
-	      subscribeCounter -= 1;
-	      if (!subscribeCounter) {
-	        document.removeEventListener('focusin', onFocusIn);
-	        document.removeEventListener('focusout', onFocusOut);
-	      }
-	    };
-	  }, []);
-	};
-	var getFocusState = function getFocusState(target, current) {
-	  if (target === current) {
-	    return 'self';
-	  }
-	  if (current.contains(target)) {
-	    return 'within';
-	  }
-	  return 'within-boundary';
-	};
-	useFocusState.useFocusState = function useFocusState() {
-	  var callbacks = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-	  var _useState = (0, _react.useState)(false),
-	    _useState2 = (0, _slicedToArray2["default"])(_useState, 2),
-	    active = _useState2[0],
-	    setActive = _useState2[1];
-	  var _useState3 = (0, _react.useState)(''),
-	    _useState4 = (0, _slicedToArray2["default"])(_useState3, 2),
-	    state = _useState4[0],
-	    setState = _useState4[1];
-	  var ref = (0, _react.useRef)(null);
-	  var focusState = (0, _react.useRef)({});
-	  var stateTracker = (0, _react.useRef)(false);
-	  (0, _react.useEffect)(function () {
-	    if (ref.current) {
-	      var isAlreadyFocused = ref.current === document.activeElement || ref.current.contains(document.activeElement);
-	      setActive(isAlreadyFocused);
-	      setState(getFocusState(document.activeElement, ref.current));
-	      if (isAlreadyFocused && callbacks.onFocus) {
-	        callbacks.onFocus();
-	      }
-	    }
-	  }, []);
-	  var onFocus = (0, _react.useCallback)(function (e) {
-	    focusState.current = {
-	      focused: true,
-	      state: getFocusState(e.target, e.currentTarget)
-	    };
-	  }, []);
-	  useDocumentFocusSubscribe();
-	  (0, _react.useEffect)(function () {
-	    var fout = mainbus.on('reset', function () {
-	      focusState.current = {};
-	    });
-	    var fin = mainbus.on('assign', function () {
-	      var newState = focusState.current.focused || false;
-	      setActive(newState);
-	      setState(focusState.current.state || '');
-	      if (newState !== stateTracker.current) {
-	        stateTracker.current = newState;
-	        if (newState) {
-	          callbacks.onFocus && callbacks.onFocus();
-	        } else {
-	          callbacks.onBlur && callbacks.onBlur();
-	        }
-	      }
-	    });
-	    return function () {
-	      fout();
-	      fin();
-	    };
-	  }, []);
-	  return {
-	    active: active,
-	    state: state,
-	    onFocus: onFocus,
-	    ref: ref
-	  };
-	};
-	return useFocusState;
-}
-
-var hasRequiredUI;
-
-function requireUI () {
-	if (hasRequiredUI) return UI;
-	hasRequiredUI = 1;
-	(function (exports) {
-
-		var _interopRequireDefault = interopRequireDefaultExports;
-		var _typeof = require_typeof();
-		Object.defineProperty(exports, "__esModule", {
-		  value: true
-		});
-		Object.defineProperty(exports, "AutoFocusInside", {
-		  enumerable: true,
-		  get: function get() {
-		    return _AutoFocusInside["default"];
-		  }
-		});
-		Object.defineProperty(exports, "FocusLockUI", {
-		  enumerable: true,
-		  get: function get() {
-		    return _Lock["default"];
-		  }
-		});
-		Object.defineProperty(exports, "FreeFocusInside", {
-		  enumerable: true,
-		  get: function get() {
-		    return _FreeFocusInside["default"];
-		  }
-		});
-		Object.defineProperty(exports, "InFocusGuard", {
-		  enumerable: true,
-		  get: function get() {
-		    return _FocusGuard["default"];
-		  }
-		});
-		Object.defineProperty(exports, "MoveFocusInside", {
-		  enumerable: true,
-		  get: function get() {
-		    return _MoveFocusInside["default"];
-		  }
-		});
-		exports["default"] = void 0;
-		Object.defineProperty(exports, "useFocusController", {
-		  enumerable: true,
-		  get: function get() {
-		    return _useFocusScope.useFocusController;
-		  }
-		});
-		Object.defineProperty(exports, "useFocusInside", {
-		  enumerable: true,
-		  get: function get() {
-		    return _MoveFocusInside.useFocusInside;
-		  }
-		});
-		Object.defineProperty(exports, "useFocusScope", {
-		  enumerable: true,
-		  get: function get() {
-		    return _useFocusScope.useFocusScope;
-		  }
-		});
-		Object.defineProperty(exports, "useFocusState", {
-		  enumerable: true,
-		  get: function get() {
-		    return _useFocusState.useFocusState;
-		  }
-		});
-		var _Lock = _interopRequireDefault(/*@__PURE__*/ requireLock());
-		var _AutoFocusInside = _interopRequireDefault(/*@__PURE__*/ requireAutoFocusInside());
-		var _MoveFocusInside = _interopRequireWildcard(/*@__PURE__*/ requireMoveFocusInside());
-		var _FreeFocusInside = _interopRequireDefault(/*@__PURE__*/ requireFreeFocusInside());
-		var _FocusGuard = _interopRequireDefault(/*@__PURE__*/ requireFocusGuard());
-		var _useFocusScope = /*@__PURE__*/ requireUseFocusScope();
-		var _useFocusState = /*@__PURE__*/ requireUseFocusState();
-		function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
-		function _interopRequireWildcard(e, r) { if (e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
-		exports["default"] = _Lock["default"]; 
-	} (UI));
-	return UI;
-}
-
-(function (exports) {
-
-	var _interopRequireDefault = interopRequireDefaultExports;
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	var _exportNames = {};
-	exports["default"] = void 0;
-	var _Combination = _interopRequireDefault(/*@__PURE__*/ requireCombination());
-	var _UI = /*@__PURE__*/ requireUI();
-	Object.keys(_UI).forEach(function (key) {
-	  if (key === "default" || key === "__esModule") return;
-	  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-	  if (key in exports && exports[key] === _UI[key]) return;
-	  Object.defineProperty(exports, key, {
-	    enumerable: true,
-	    get: function get() {
-	      return _UI[key];
-	    }
-	  });
-	});
-	exports["default"] = _Combination["default"]; 
-} (cjs));
-
-const FocusLock = /*@__PURE__*/getDefaultExportFromCjs(cjs);
+var FocusLockCombination = /* @__PURE__ */ __mf_16(function FocusLockUICombination(props, ref) {
+  return /* @__PURE__ */ __mfDefaultExport.createElement(FocusLock, _extends({
+    sideCar: FocusTrap,
+    ref
+  }, props));
+});
+var _ref = FocusLock.propTypes || {}; _ref.sideCar; _objectWithoutPropertiesLoose$1(_ref, ["sideCar"]);
+FocusLockCombination.propTypes = {};
 
 var AnimatePresenceContext = /*#__PURE__*/__mf_13();
 
@@ -12011,7 +10484,7 @@ var Drawer = /* @__PURE__ */ __mf_16(function(inProps, ref) {
       "in": isOpen,
       onExitComplete,
       children: !!isMounted && jsx(Portal$1, _objectSpread2$5(_objectSpread2$5({}, portalProps), {}, {
-        children: jsx(FocusLock, {
+        children: jsx(FocusLockCombination, {
           disabled: !ensureFocus,
           autoFocus,
           returnFocus,
@@ -16186,7 +14659,7 @@ var processColorModeTokens = function processColorModeTokens(obj) {
       key = _Object$entries$_i[0],
       value = _Object$entries$_i[1];
     var currentPath = path ? "".concat(path, ".").concat(key) : key;
-    if (_typeof$5(value) === 'object' && value !== null && !Array.isArray(value)) {
+    if (_typeof$4(value) === 'object' && value !== null && !Array.isArray(value)) {
       // Check if it's a _dark/_light structure (must have both _dark and _light properties)
       if (Object.prototype.hasOwnProperty.call(value, '_dark') && Object.prototype.hasOwnProperty.call(value, '_light')) {
         // Generate variables with -dark/-light suffixes

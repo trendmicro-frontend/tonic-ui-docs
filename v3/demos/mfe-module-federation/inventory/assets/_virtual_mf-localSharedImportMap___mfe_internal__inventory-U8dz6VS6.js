@@ -4,17 +4,17 @@ import { _ as __vitePreload } from './preload-helper-aLkWP_H3.js';
 const importMap = {
       
         "react": async () => {
-          let pkg = await __vitePreload(() => import('./_virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js-CMbQQlkX.js').then(n => n.p),true              ?[]:void 0);
+          let pkg = await __vitePreload(() => import('./_virtual_mf___mfe_internal__inventory__loadShare__react__loadShare__.js-B1ypUsOn.js').then(n => n.p),true              ?[]:void 0);
             return pkg;
         }
       ,
         "react-dom": async () => {
-          let pkg = await __vitePreload(() => import('./_virtual_mf___mfe_internal__inventory__loadShare__react_mf_2_dom__loadShare__.js-D9KS16vq.js').then(n => n.c),true              ?[]:void 0);
+          let pkg = await __vitePreload(() => import('./_virtual_mf___mfe_internal__inventory__loadShare__react_mf_2_dom__loadShare__.js-Bf8aYbgB.js').then(n => n.c),true              ?[]:void 0);
             return pkg;
         }
       ,
         "react/jsx-runtime": async () => {
-          let pkg = await __vitePreload(() => import('./_virtual_mf___mfe_internal__inventory__loadShare__react_mf_1_jsx_mf_2_runtime__loadShare__.js-DGw0ZAHT.js').then(n => n.c),true              ?[]:void 0);
+          let pkg = await __vitePreload(() => import('./_virtual_mf___mfe_internal__inventory__loadShare__react_mf_1_jsx_mf_2_runtime__loadShare__.js-DJVUU5ri.js').then(n => n.b),true              ?[]:void 0);
             return pkg;
         }
       
