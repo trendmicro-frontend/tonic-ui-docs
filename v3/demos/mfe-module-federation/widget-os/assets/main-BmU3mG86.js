@@ -3051,6 +3051,33 @@ function createBreakpoints() {
   });
 }
 
+/** @typedef {ReturnType<typeof import('./createBreakpoints').createBreakpoints>} Breakpoints */
+/** @typedef {Pick<Breakpoints, 'gte' | 'lt' | 'between' | 'only'>} ContainerQueryMethods */
+/** @typedef {((name: string) => ContainerQueryMethods) & ContainerQueryMethods} ContainerQueries */
+
+/** @param {Breakpoints} breakpoints @returns {ContainerQueries} */
+function createContainerQueries(breakpoints) {
+  /** @param {string} [name] @returns {ContainerQueryMethods} */
+  function forContainer(name) {
+    var prefix = name ? "@container ".concat(name) : '@container';
+    return {
+      gte: function gte(key) {
+        return prefix + breakpoints.gte(key).slice('@media'.length);
+      },
+      lt: function lt(key) {
+        return prefix + breakpoints.lt(key).slice('@media'.length);
+      },
+      between: function between(start, end) {
+        return prefix + breakpoints.between(start, end).slice('@media'.length);
+      },
+      only: function only(key) {
+        return prefix + breakpoints.only(key).slice('@media'.length);
+      }
+    };
+  }
+  return Object.assign(forContainer, forContainer());
+}
+
 /**
  * Resolve token references in any value.
  *
@@ -6443,7 +6470,7 @@ var useShallowMemo$1 = useShallowMemo;
  * resolved to their appropriate values based on the active color mode.
  *
  * @param {useThemeOptions} [options] - Optional configuration for the hook.
- * @returns {ThemeScales & { readonly breakpoints: ReturnType<typeof import('@tonic-ui/utils/internal').createBreakpoints>, get: (path: string, defaultValue?: string) => string }} The resolved theme object with color mode tokens resolved.
+ * @returns {ThemeScales & { readonly breakpoints: ReturnType<typeof import('@tonic-ui/utils/internal').createBreakpoints>, containerQueries: ReturnType<typeof import('@tonic-ui/utils/internal').createContainerQueries>, get: (path: string, defaultValue?: string) => string }} The resolved theme object with color mode tokens resolved.
  *
  * @example
  * // Using current color mode from context
@@ -10358,6 +10385,10 @@ var createTheme$3 = function createTheme() {
   var deprecatedTheme = createV2Theme(unit);
   var primitiveTokens = createPrimitiveTokens(unit);
   var semanticTokens = createSemanticTokens();
+  var breakpoints = createBreakpoints({
+    values: primitiveTokens.breakpoints,
+    unit: 'rem'
+  });
 
   // Merge strategy: deprecated provides base, primitive overrides conflicts
   // This way primitive tokens naturally override deprecated tokens with same names
@@ -10368,10 +10399,8 @@ var createTheme$3 = function createTheme() {
     fontSizes: _objectSpread2(_objectSpread2({}, deprecatedTheme.fontSizes), primitiveTokens.fontSizes),
     fontWeights: _objectSpread2(_objectSpread2({}, deprecatedTheme.fontWeights), primitiveTokens.fontWeights),
     radii: _objectSpread2(_objectSpread2({}, deprecatedTheme.radii), primitiveTokens.radii),
-    breakpoints: createBreakpoints({
-      values: primitiveTokens.breakpoints,
-      unit: 'rem'
-    }),
+    breakpoints: breakpoints,
+    containerQueries: createContainerQueries(breakpoints),
     lineHeights: _objectSpread2(_objectSpread2({}, deprecatedTheme.lineHeights), primitiveTokens.lineHeights),
     outlines: _objectSpread2(_objectSpread2({}, deprecatedTheme.outlines), primitiveTokens.outlines),
     space: _objectSpread2(_objectSpread2({}, deprecatedTheme.space), primitiveTokens.space),
@@ -10418,7 +10447,7 @@ var processColorModeTokens = function processColorModeTokens(obj) {
     var _Object$entries$_i = _slicedToArray$3(_Object$entries[_i], 2),
       key = _Object$entries$_i[0],
       value = _Object$entries$_i[1];
-    if (!path && key === 'breakpoints') {
+    if (!path && (key === 'breakpoints' || key === 'containerQueries')) {
       continue;
     }
     var currentPath = path ? "".concat(path, ".").concat(key) : key;
@@ -10532,7 +10561,7 @@ var defaultCSSVariableRootSelector = ':root';
  *
  * @param {CreateThemeOptions & ThemeOverrides} [options={}] - Theme configuration options.
  * @param {...ThemeOverrides} args - Additional theme objects to merge.
- * @returns {ThemeScales & { readonly breakpoints: ReturnType<typeof createBreakpoints>, cssVariablePrefix: string, cssVariables: ThemeScales, rootSelector: string }} The created theme object.
+ * @returns {ThemeScales & { readonly breakpoints: ReturnType<typeof createBreakpoints>, containerQueries: ReturnType<typeof createContainerQueries>, cssVariablePrefix: string, cssVariables: ThemeScales, rootSelector: string }} The created theme object.
  */
 var createTheme = function createTheme() {
   var _cssVariableConfig$pr, _cssVariableConfig$ro;
@@ -10550,7 +10579,7 @@ var createTheme = function createTheme() {
   var theme = Object.fromEntries(Object.entries(theme$2).filter(function (_ref) {
     var _ref2 = _slicedToArray$3(_ref, 1),
       key = _ref2[0];
-    return key !== 'breakpoints';
+    return key !== 'breakpoints' && key !== 'containerQueries';
   }));
   for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
     args[_key - 1] = arguments[_key];
@@ -10570,6 +10599,7 @@ var createTheme = function createTheme() {
         unit = _breakpoints.unit;
       }
     }
+    delete scales.containerQueries;
     theme = merge$1(theme, scales);
   }
   var breakpoints = createBreakpoints({
@@ -10577,6 +10607,7 @@ var createTheme = function createTheme() {
     unit: unit
   });
   theme.breakpoints = breakpoints;
+  theme.containerQueries = createContainerQueries(breakpoints);
 
   // Resolve token references (e.g., {colors.primary} → actual value)
   // Note: Preserves _dark/_light structure for color mode handling
