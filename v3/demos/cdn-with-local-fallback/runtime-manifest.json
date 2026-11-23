@@ -60,7 +60,7 @@
     "@tonic-ui/react": {
       "local": {
         "imports": {
-          "@tonic-ui/react": "./assets/npm/@tonic-ui/react@3.0.0-alpha.4/index-DO9h0aIC.js"
+          "@tonic-ui/react": "./assets/npm/@tonic-ui/react@3.0.0-alpha.4/index-DgTlgw4R.js"
         },
         "probes": [
           "@tonic-ui/react"
